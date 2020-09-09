@@ -9,8 +9,8 @@
  */
 
 $visual_voyager_default_colors = [
-	'link'   => '#0073e5',
-	'accent' => '#0073e5',
+	'link'   => '#660099',
+	'accent' => '#cc3366',
 ];
 
 $visual_voyager_link_color = get_theme_mod(
@@ -28,7 +28,7 @@ $visual_voyager_link_color_brightness = visual_voyager_color_brightness( $visual
 
 return [
 	'fonts-url'            => 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700&display=swap',
-	'content-width'        => 1062,
+	'content-width'        => 1500,
 	'button-bg'            => $visual_voyager_link_color,
 	'button-color'         => $visual_voyager_link_color_contrast,
 	'button-outline-hover' => $visual_voyager_link_color_brightness,
@@ -54,7 +54,7 @@ return [
 		],
 		[
 			'name' => __( 'Normal', 'visual-voyager' ),
-			'size' => 18,
+			'size' => 16,
 			'slug' => 'normal',
 		],
 		[

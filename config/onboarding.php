@@ -18,7 +18,7 @@ return [
 			'title'       => __( 'Black & White', 'visual-voyager' ),
 			'description' => __( 'A pack with a homepage designed with black and white images.', 'visual-voyager' ),
 			'thumbnail'   => get_stylesheet_directory_uri() . '/config/import/images/thumbnails/home-black-white.jpg',
-			'demo_url'    => 'https://visualvoyager.netgenesis-sample/',
+			'demo_url'    => 'https://demo.studiopress.com/genesis-sample/',
 			'config'      => [
 				'dependencies'     => [
 					'plugins' => $visual_voyager_shared_content['plugins'],
@@ -50,7 +50,7 @@ return [
 			'title'       => __( 'Color', 'visual-voyager' ),
 			'description' => __( 'A pack with a homepage designed with color images.', 'visual-voyager' ),
 			'thumbnail'   => get_stylesheet_directory_uri() . '/config/import/images/thumbnails/home-color.jpg',
-			'demo_url'    => 'https://visualvoyager.netgenesis-sample/home-color/',
+			'demo_url'    => 'https://demo.studiopress.com/genesis-sample/home-color/',
 			'config'      => [
 				'dependencies'     => [
 					'plugins' => $visual_voyager_shared_content['plugins'],
