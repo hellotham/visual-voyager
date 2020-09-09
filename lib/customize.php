@@ -1,13 +1,13 @@
 <?php
 /**
- * Genesis Sample.
+ * Visual Voyager.
  *
- * This file adds the Customizer additions to the Genesis Sample Theme.
+ * This file adds the Customizer additions to the Visual Voyager Theme.
  *
- * @package Genesis Sample
- * @author  StudioPress
+ * @package Visual Voyager
+ * @author  HelloTham
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    https://www.hellotham.com/
  */
 
 add_action( 'customize_register', 'genesis_sample_customizer_register' );
@@ -35,8 +35,8 @@ function genesis_sample_customizer_register( $wp_customize ) {
 			$wp_customize,
 			'genesis_sample_link_color',
 			[
-				'description' => __( 'Change the color of post info links and button blocks, the hover color of linked titles and menu items, and more.', 'genesis-sample' ),
-				'label'       => __( 'Link Color', 'genesis-sample' ),
+				'description' => __( 'Change the color of post info links and button blocks, the hover color of linked titles and menu items, and more.', 'visual-voyager' ),
+				'label'       => __( 'Link Color', 'visual-voyager' ),
 				'section'     => 'colors',
 				'settings'    => 'genesis_sample_link_color',
 			]
@@ -56,8 +56,8 @@ function genesis_sample_customizer_register( $wp_customize ) {
 			$wp_customize,
 			'genesis_sample_accent_color',
 			[
-				'description' => __( 'Change the default hover color for button links, menu buttons, and submit buttons. The button block uses the Link Color.', 'genesis-sample' ),
-				'label'       => __( 'Accent Color', 'genesis-sample' ),
+				'description' => __( 'Change the default hover color for button links, menu buttons, and submit buttons. The button block uses the Link Color.', 'visual-voyager' ),
+				'label'       => __( 'Accent Color', 'visual-voyager' ),
 				'section'     => 'colors',
 				'settings'    => 'genesis_sample_accent_color',
 			]
@@ -77,8 +77,8 @@ function genesis_sample_customizer_register( $wp_customize ) {
 	$wp_customize->add_control(
 		'genesis_sample_logo_width',
 		[
-			'label'       => __( 'Logo Width', 'genesis-sample' ),
-			'description' => __( 'The maximum width of the logo in pixels.', 'genesis-sample' ),
+			'label'       => __( 'Logo Width', 'visual-voyager' ),
+			'description' => __( 'The maximum width of the logo in pixels.', 'visual-voyager' ),
 			'priority'    => 9,
 			'section'     => 'title_tagline',
 			'settings'    => 'genesis_sample_logo_width',
@@ -102,9 +102,9 @@ function genesis_sample_customizer_register( $wp_customize ) {
 function genesis_sample_validate_logo_width( $validity, $width ) {
 
 	if ( empty( $width ) || ! is_numeric( $width ) ) {
-		$validity->add( 'required', __( 'You must supply a valid number.', 'genesis-sample' ) );
+		$validity->add( 'required', __( 'You must supply a valid number.', 'visual-voyager' ) );
 	} elseif ( $width < 100 ) {
-		$validity->add( 'logo_too_small', __( 'The logo width cannot be less than 100.', 'genesis-sample' ) );
+		$validity->add( 'logo_too_small', __( 'The logo width cannot be less than 100.', 'visual-voyager' ) );
 	}
 
 	return $validity;

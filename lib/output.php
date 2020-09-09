@@ -1,13 +1,13 @@
 <?php
 /**
- * Genesis Sample.
+ * Visual Voyager.
  *
- * This file adds the required CSS to the front end to the Genesis Sample Theme.
+ * This file adds the required CSS to the front end to the Visual Voyager Theme.
  *
- * @package Genesis Sample
- * @author  StudioPress
+ * @package Visual Voyager
+ * @author  HelloTham
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    https://www.hellotham.com/
  */
 
 add_action( 'wp_enqueue_scripts', 'genesis_sample_css' );

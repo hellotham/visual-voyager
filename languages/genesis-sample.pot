@@ -2,7 +2,7 @@
 # This file is distributed under the GPL-2.0-or-later.=!>
 msgid ""
 msgstr ""
-"Project-Id-Version: Genesis Sample 3.3.1\n"
+"Project-Id-Version: Visual Voyager 3.3.1\n"
 "Report-Msgid-Bugs-To: StudioPress <translations@studiopress.com>\n"
 "POT-Creation-Date: 2020-08-14 15:48:27+00:00\n"
 "MIME-Version: 1.0\n"
@@ -158,11 +158,11 @@ msgid "Simple Contact Form"
 msgstr ""
 
 #. Theme Name of the plugin/theme
-msgid "Genesis Sample"
+msgid "Visual Voyager"
 msgstr ""
 
 #. Theme URI of the plugin/theme
-msgid "https://demo.studiopress.com/"
+msgid "https://visualvoyager.net"
 msgstr ""
 
 #. Description of the plugin/theme
@@ -174,7 +174,7 @@ msgid "StudioPress"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "https://www.studiopress.com/"
+msgid "https://www.hellotham.com/"
 msgstr ""
 
 #. Template Name of the plugin/theme

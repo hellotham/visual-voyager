@@ -1,13 +1,13 @@
 <?php
 /**
- * Genesis Sample.
+ * Visual Voyager.
  *
  * Homepage content optionally installed after theme activation.
  *
- * @package Genesis Sample
- * @author  StudioPress
+ * @package Visual Voyager
+ * @author  HelloTham
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    https://www.hellotham.com/
  */
 
 // Photo by Rohit Tandon on Unsplash: https://unsplash.com/photos/9wg5jCEPBsw.

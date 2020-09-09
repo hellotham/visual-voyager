@@ -1,13 +1,13 @@
 <?php
 /**
- * Genesis Sample.
+ * Visual Voyager.
  *
- * This file adds the required WooCommerce setup functions to the Genesis Sample Theme.
+ * This file adds the required WooCommerce setup functions to the Visual Voyager Theme.
  *
- * @package Genesis Sample
- * @author  StudioPress
+ * @package Visual Voyager
+ * @author  HelloTham
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    https://www.hellotham.com/
  */
 
 // Adds product gallery support.
@@ -70,8 +70,8 @@ add_filter( 'woocommerce_pagination_args', 'genesis_sample_woocommerce_paginatio
  */
 function genesis_sample_woocommerce_pagination( $args ) {
 
-	$args['prev_text'] = sprintf( '&laquo; %s', __( 'Previous Page', 'genesis-sample' ) );
-	$args['next_text'] = sprintf( '%s &raquo;', __( 'Next Page', 'genesis-sample' ) );
+	$args['prev_text'] = sprintf( '&laquo; %s', __( 'Previous Page', 'visual-voyager' ) );
+	$args['next_text'] = sprintf( '%s &raquo;', __( 'Next Page', 'visual-voyager' ) );
 
 	return $args;
 

@@ -1,11 +1,11 @@
 <?php
 /**
- * Genesis Sample child theme.
+ * Visual Voyager child theme.
  *
- * @package Genesis Sample
- * @author  StudioPress
+ * @package Visual Voyager
+ * @author  HelloTham
  * @license GPL-2.0-or-later
- * @link    https://my.studiopress.com/themes/genesis-sample/
+ * @link    https://my.studiopress.com/themes/visual-voyager/
  */
 
 /**

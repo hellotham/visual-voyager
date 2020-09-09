@@ -6,10 +6,10 @@
  *
  * Visit `/wp-admin/admin.php?page=genesis-getting-started` to trigger import.
  *
- * @package Genesis Sample
- * @author  StudioPress
+ * @package Visual Voyager
+ * @author  HelloTham
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    https://www.hellotham.com/
  */
 
 // Photo by Felipe Dolce on Unsplash.

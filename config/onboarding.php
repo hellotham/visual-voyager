@@ -1,13 +1,13 @@
 <?php
 /**
- * Genesis Sample.
+ * Visual Voyager.
  *
  * Onboarding config to load plugins and homepage content on theme activation.
  *
- * @package Genesis Sample
- * @author  StudioPress
+ * @package Visual Voyager
+ * @author  HelloTham
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    https://www.hellotham.com/
  */
 
 $genesis_sample_shared_content = genesis_get_config( 'onboarding-shared' );
@@ -15,10 +15,10 @@ $genesis_sample_shared_content = genesis_get_config( 'onboarding-shared' );
 return [
 	'starter_packs' => [
 		'black-white' => [
-			'title'       => __( 'Black & White', 'genesis-sample' ),
-			'description' => __( 'A pack with a homepage designed with black and white images.', 'genesis-sample' ),
+			'title'       => __( 'Black & White', 'visual-voyager' ),
+			'description' => __( 'A pack with a homepage designed with black and white images.', 'visual-voyager' ),
 			'thumbnail'   => get_stylesheet_directory_uri() . '/config/import/images/thumbnails/home-black-white.jpg',
-			'demo_url'    => 'https://demo.studiopress.com/genesis-sample/',
+			'demo_url'    => 'https://visualvoyager.netgenesis-sample/',
 			'config'      => [
 				'dependencies'     => [
 					'plugins' => $genesis_sample_shared_content['plugins'],
@@ -47,10 +47,10 @@ return [
 			],
 		],
 		'color'       => [
-			'title'       => __( 'Color', 'genesis-sample' ),
-			'description' => __( 'A pack with a homepage designed with color images.', 'genesis-sample' ),
+			'title'       => __( 'Color', 'visual-voyager' ),
+			'description' => __( 'A pack with a homepage designed with color images.', 'visual-voyager' ),
 			'thumbnail'   => get_stylesheet_directory_uri() . '/config/import/images/thumbnails/home-color.jpg',
-			'demo_url'    => 'https://demo.studiopress.com/genesis-sample/home-color/',
+			'demo_url'    => 'https://visualvoyager.netgenesis-sample/home-color/',
 			'config'      => [
 				'dependencies'     => [
 					'plugins' => $genesis_sample_shared_content['plugins'],

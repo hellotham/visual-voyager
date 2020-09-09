@@ -1,11 +1,11 @@
 <?php
 /**
- * Genesis Sample appearance settings.
+ * Visual Voyager appearance settings.
  *
- * @package Genesis Sample
- * @author  StudioPress
+ * @package Visual Voyager
+ * @author  HelloTham
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    https://www.hellotham.com/
  */
 
 $genesis_sample_default_colors = [
@@ -36,34 +36,34 @@ return [
 	'default-colors'       => $genesis_sample_default_colors,
 	'editor-color-palette' => [
 		[
-			'name'  => __( 'Custom color', 'genesis-sample' ), // Called “Link Color” in the Customizer options. Renamed because “Link Color” implies it can only be used for links.
+			'name'  => __( 'Custom color', 'visual-voyager' ), // Called “Link Color” in the Customizer options. Renamed because “Link Color” implies it can only be used for links.
 			'slug'  => 'theme-primary',
 			'color' => $genesis_sample_link_color,
 		],
 		[
-			'name'  => __( 'Accent color', 'genesis-sample' ),
+			'name'  => __( 'Accent color', 'visual-voyager' ),
 			'slug'  => 'theme-secondary',
 			'color' => $genesis_sample_accent_color,
 		],
 	],
 	'editor-font-sizes'    => [
 		[
-			'name' => __( 'Small', 'genesis-sample' ),
+			'name' => __( 'Small', 'visual-voyager' ),
 			'size' => 12,
 			'slug' => 'small',
 		],
 		[
-			'name' => __( 'Normal', 'genesis-sample' ),
+			'name' => __( 'Normal', 'visual-voyager' ),
 			'size' => 18,
 			'slug' => 'normal',
 		],
 		[
-			'name' => __( 'Large', 'genesis-sample' ),
+			'name' => __( 'Large', 'visual-voyager' ),
 			'size' => 20,
 			'slug' => 'large',
 		],
 		[
-			'name' => __( 'Larger', 'genesis-sample' ),
+			'name' => __( 'Larger', 'visual-voyager' ),
 			'size' => 24,
 			'slug' => 'larger',
 		],

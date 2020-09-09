@@ -1,11 +1,11 @@
 <?php
 /**
- * Genesis Sample Simple Social Icons default settings.
+ * Visual Voyager Simple Social Icons default settings.
  *
- * @package Genesis Sample
- * @author  StudioPress
+ * @package Visual Voyager
+ * @author  HelloTham
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    https://www.hellotham.com/
  */
 
 return [

@@ -1,13 +1,13 @@
 <?php
 /**
- * Genesis Sample.
+ * Visual Voyager.
  *
- * This file adds the WooCommerce styles and the Customizer additions for WooCommerce to the Genesis Sample Theme.
+ * This file adds the WooCommerce styles and the Customizer additions for WooCommerce to the Visual Voyager Theme.
  *
- * @package Genesis Sample
- * @author  StudioPress
+ * @package Visual Voyager
+ * @author  HelloTham
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    https://www.hellotham.com/
  */
 
 add_filter( 'woocommerce_enqueue_styles', 'genesis_sample_woocommerce_styles' );
@@ -22,7 +22,7 @@ add_filter( 'woocommerce_enqueue_styles', 'genesis_sample_woocommerce_styles' );
 function genesis_sample_woocommerce_styles( $enqueue_styles ) {
 
 	$enqueue_styles[ genesis_get_theme_handle() . '-woocommerce-styles' ] = [
-		'src'     => get_stylesheet_directory_uri() . '/lib/woocommerce/genesis-sample-woocommerce.css',
+		'src'     => get_stylesheet_directory_uri() . '/lib/woocommerce/visual-voyager-woocommerce.css',
 		'deps'    => '',
 		'version' => genesis_get_theme_version(),
 		'media'   => 'screen',

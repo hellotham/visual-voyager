@@ -1,15 +1,15 @@
 <?php
 /**
- * Genesis Sample.
+ * Visual Voyager.
  *
- * This file adds the landing page template to the Genesis Sample Theme.
+ * This file adds the landing page template to the Visual Voyager Theme.
  *
  * Template Name: Landing
  *
- * @package Genesis Sample
- * @author  StudioPress
+ * @package Visual Voyager
+ * @author  HelloTham
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    https://www.hellotham.com/
  */
 
 add_filter( 'body_class', 'genesis_sample_landing_body_class' );
