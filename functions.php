@@ -136,7 +136,7 @@ add_image_size( 'sidebar-featured', 75, 75, true );
 add_image_size( 'genesis-singular-images', 1500, 1000, true );
 
 // Removes header right widget area.
-unregister_sidebar( 'header-right' );
+// unregister_sidebar( 'header-right' );
 
 // Removes secondary sidebar.
 unregister_sidebar( 'sidebar-alt' );
@@ -203,3 +203,38 @@ function visual_voyager_comments_gravatar( $args ) {
 	return $args;
 
 }
+
+/**
+ * Portfolio Template for Taxonomies
+ * 
+ */
+function be_portfolio_template( $template ) {
+  if( is_tax( array( 'portfolio_category', 'portfolio_tag' ) ) )
+    $template = get_query_template( 'archive-portfolio' );
+  return $template;
+}
+add_filter( 'template_include', 'be_portfolio_template' );
+
+/**
+ * Add 'page-attributes' to Portfolio Post Type
+ *
+ * @param array $args, arguments passed to register_post_type
+ * @return array $args
+ */
+function be_portfolio_post_type_args( $args ) {
+	$args['supports'][] = 'page-attributes';
+	return $args;
+}
+add_filter( 'portfolioposttype_args', 'be_portfolio_post_type_args' );
+
+/**
+ * Sort projects by menu order 
+ *
+ */
+function be_portfolio_query( $query ) {
+	if( $query->is_main_query() && !is_admin() && ( is_post_type_archive( 'portfolio' ) || is_tax( array( 'portfolio_category', 'portfolio_tag' ) ) ) ) {
+		$query->set( 'orderby', 'menu_order' );
+		$query->set( 'order', 'ASC' );
+	}
+}
+add_action( 'pre_get_posts', 'be_portfolio_query' );

@@ -383,7 +383,7 @@ textarea {
 	background-color: #fff;
 	border: 1px solid #ddd;
 	color: #333;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 400;
 	padding: 15px;
 	width: 100%;
@@ -1571,6 +1571,11 @@ p.entry-meta {
 
 	.site-inner {
 		max-width: 1500px;
+	}
+
+	.site-inner.full {
+		max-width: none;
+		padding: 0;
 	}
 
 	/* Content
