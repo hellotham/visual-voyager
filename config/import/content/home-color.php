@@ -11,14 +11,14 @@
  */
 
 // Photo by Rohit Tandon on Unsplash: https://unsplash.com/photos/9wg5jCEPBsw.
-$genesis_sample_homepage_header_image_url = CHILD_URL . '/config/import/images/mountain-color.jpg';
+$visual_voyager_homepage_header_image_url = CHILD_URL . '/config/import/images/mountain-color.jpg';
 
 // Photo by Haley Powers on Unsplash: https://unsplash.com/photos/rjhvXX7JBPc.
-$genesis_sample_homepage_faq_image_url = CHILD_URL . '/config/import/images/home-about-color.jpg';
+$visual_voyager_homepage_faq_image_url = CHILD_URL . '/config/import/images/home-about-color.jpg';
 
 return <<<CONTENT
 <!-- wp:media-text {"align":"full","mediaId":1657,"mediaType":"image","isStackedOnMobile":true} -->
-<div class="wp-block-media-text alignfull is-stacked-on-mobile"><figure class="wp-block-media-text__media"><img src="$genesis_sample_homepage_header_image_url" alt="" class="wp-image-1657"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":1} -->
+<div class="wp-block-media-text alignfull is-stacked-on-mobile"><figure class="wp-block-media-text__media"><img src="$visual_voyager_homepage_header_image_url" alt="" class="wp-image-1657"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":1} -->
 <h1>We'll teach you how to build and grow an online business.</h1>
 <!-- /wp:heading -->
 
@@ -118,7 +118,7 @@ return <<<CONTENT
 
 <!-- wp:atomic-blocks/ab-column -->
 <div class="wp-block-atomic-blocks-ab-column ab-block-layout-column"><div class="ab-block-layout-column-inner"><!-- wp:image {"id":1655,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="$genesis_sample_homepage_faq_image_url" alt="" class="wp-image-1655"/></figure>
+<figure class="wp-block-image size-large"><img src="$visual_voyager_homepage_faq_image_url" alt="" class="wp-image-1655"/></figure>
 <!-- /wp:image --></div></div>
 <!-- /wp:atomic-blocks/ab-column --></div></div>
 <!-- /wp:atomic-blocks/ab-columns -->

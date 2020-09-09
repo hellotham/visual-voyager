@@ -7,7 +7,7 @@ Author URI: https://www.hellotham.com/
 
 Version: 1.0.0
 
-Tags: accessibility-ready, block-styles, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, left-sidebar, one-column, right-sidebar, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, two-columns, wide-blocks
+Tags: blog, e-commerce, news, photography, portfolio, accessibility-ready, block-styles, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, left-sidebar, one-column, right-sidebar, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, two-columns, wide-blocks
 
 Template: genesis
 
@@ -157,8 +157,8 @@ html {
 body {
 	background-color: #fff;
 	color: #333;
-	font-family: "Source Sans Pro", sans-serif;
-	font-size: 18px;
+	font-family: sans-serif;
+	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.625;
 	margin: 0;
@@ -177,14 +177,14 @@ textarea:focus,
 }
 
 a {
-	color: #0073e5;
+	color: #660099;
 	text-decoration: underline;
 	transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 a:focus,
 a:hover {
-	color: #333;
+	color: #cc3366;
 	text-decoration: none;
 }
 
@@ -242,7 +242,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Source Sans Pro", sans-serif;
+	font-family: sans-serif;
 	font-weight: 400;
 	line-height: 1.2;
 	margin: 0 0 20px;
@@ -423,7 +423,7 @@ input[type="submit"],
 .site-container div.wpforms-container-full .wpforms-form input[type="submit"],
 .site-container div.wpforms-container-full .wpforms-form button[type="submit"],
 .button {
-	background-color: #333;
+	background-color: #660099;
 	border: 0;
 	border-radius: 5px;
 	color: #fff;
@@ -451,7 +451,7 @@ input[type="submit"]:hover,
 .site-container div.wpforms-container-full .wpforms-form button[type="submit"]:hover,
 .button:focus,
 .button:hover {
-	background-color: #0073e5;
+	background-color: #cc3366;
 	border-width: 0;
 	color: #fff;
 }
@@ -1059,7 +1059,7 @@ figcaption,
 }
 
 .genesis-nav-menu a {
-	color: #333;
+	color: #660099;
 	display: block;
 	font-size: 15px;
 	font-weight: 400;
@@ -1074,7 +1074,7 @@ figcaption,
 .genesis-nav-menu .current-menu-item > a,
 .genesis-nav-menu .sub-menu .current-menu-item > a:focus,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
-	color: #0073e5;
+	color: #cc3366;
 	text-decoration: none;
 }
 
@@ -1138,7 +1138,7 @@ figcaption,
 .sub-menu-toggle {
 	background-color: transparent;
 	border-width: 0;
-	color: #333;
+	color: #660099;
 	display: block;
 	margin: 0 auto;
 	overflow: hidden;
@@ -1152,7 +1152,7 @@ figcaption,
 .sub-menu-toggle:hover {
 	background-color: transparent;
 	border-width: 0;
-	color: #0073e5;
+	color: #cc3366;
 }
 
 .menu-toggle {
@@ -1570,7 +1570,7 @@ p.entry-meta {
 	--------------------------------------------- */
 
 	.site-inner {
-		max-width: 1140px;
+		max-width: 1500px;
 	}
 
 	/* Content
@@ -1578,7 +1578,7 @@ p.entry-meta {
 
 	.content {
 		float: left;
-		width: 65%;
+		width: 75%;
 	}
 
 	.sidebar-content .content {
@@ -1596,7 +1596,7 @@ p.entry-meta {
 
 	.sidebar {
 		float: right;
-		width: 30%;
+		width: 25%;
 	}
 
 	.sidebar-content .sidebar {

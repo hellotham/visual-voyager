@@ -10,7 +10,7 @@
  * @link    https://www.hellotham.com/
  */
 
-add_action( 'customize_register', 'genesis_sample_customizer_register' );
+add_action( 'customize_register', 'visual_voyager_customizer_register' );
 /**
  * Registers settings and controls with the Customizer.
  *
@@ -18,12 +18,12 @@ add_action( 'customize_register', 'genesis_sample_customizer_register' );
  *
  * @param WP_Customize_Manager $wp_customize Customizer object.
  */
-function genesis_sample_customizer_register( $wp_customize ) {
+function visual_voyager_customizer_register( $wp_customize ) {
 
 	$appearance = genesis_get_config( 'appearance' );
 
 	$wp_customize->add_setting(
-		'genesis_sample_link_color',
+		'visual_voyager_link_color',
 		[
 			'default'           => $appearance['default-colors']['link'],
 			'sanitize_callback' => 'sanitize_hex_color',
@@ -33,18 +33,18 @@ function genesis_sample_customizer_register( $wp_customize ) {
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control(
 			$wp_customize,
-			'genesis_sample_link_color',
+			'visual_voyager_link_color',
 			[
 				'description' => __( 'Change the color of post info links and button blocks, the hover color of linked titles and menu items, and more.', 'visual-voyager' ),
 				'label'       => __( 'Link Color', 'visual-voyager' ),
 				'section'     => 'colors',
-				'settings'    => 'genesis_sample_link_color',
+				'settings'    => 'visual_voyager_link_color',
 			]
 		)
 	);
 
 	$wp_customize->add_setting(
-		'genesis_sample_accent_color',
+		'visual_voyager_accent_color',
 		[
 			'default'           => $appearance['default-colors']['accent'],
 			'sanitize_callback' => 'sanitize_hex_color',
@@ -54,34 +54,34 @@ function genesis_sample_customizer_register( $wp_customize ) {
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control(
 			$wp_customize,
-			'genesis_sample_accent_color',
+			'visual_voyager_accent_color',
 			[
 				'description' => __( 'Change the default hover color for button links, menu buttons, and submit buttons. The button block uses the Link Color.', 'visual-voyager' ),
 				'label'       => __( 'Accent Color', 'visual-voyager' ),
 				'section'     => 'colors',
-				'settings'    => 'genesis_sample_accent_color',
+				'settings'    => 'visual_voyager_accent_color',
 			]
 		)
 	);
 
 	$wp_customize->add_setting(
-		'genesis_sample_logo_width',
+		'visual_voyager_logo_width',
 		[
 			'default'           => 350,
 			'sanitize_callback' => 'absint',
-			'validate_callback' => 'genesis_sample_validate_logo_width',
+			'validate_callback' => 'visual_voyager_validate_logo_width',
 		]
 	);
 
 	// Add a control for the logo size.
 	$wp_customize->add_control(
-		'genesis_sample_logo_width',
+		'visual_voyager_logo_width',
 		[
 			'label'       => __( 'Logo Width', 'visual-voyager' ),
 			'description' => __( 'The maximum width of the logo in pixels.', 'visual-voyager' ),
 			'priority'    => 9,
 			'section'     => 'title_tagline',
-			'settings'    => 'genesis_sample_logo_width',
+			'settings'    => 'visual_voyager_logo_width',
 			'type'        => 'number',
 			'input_attrs' => [
 				'min' => 100,
@@ -99,7 +99,7 @@ function genesis_sample_customizer_register( $wp_customize ) {
  * @param int    $width The width entered by the user.
  * @return int The new width.
  */
-function genesis_sample_validate_logo_width( $validity, $width ) {
+function visual_voyager_validate_logo_width( $validity, $width ) {
 
 	if ( empty( $width ) || ! is_numeric( $width ) ) {
 		$validity->add( 'required', __( 'You must supply a valid number.', 'visual-voyager' ) );

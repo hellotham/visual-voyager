@@ -10,13 +10,13 @@
  * @link    https://www.hellotham.com/
  */
 
-add_action( 'admin_print_styles', 'genesis_sample_remove_woocommerce_notice' );
+add_action( 'admin_print_styles', 'visual_voyager_remove_woocommerce_notice' );
 /**
  * Removes the default WooCommerce Notice.
  *
  * @since 2.3.0
  */
-function genesis_sample_remove_woocommerce_notice() {
+function visual_voyager_remove_woocommerce_notice() {
 
 	// If below version WooCommerce 2.3.0, exit early.
 	if ( ! class_exists( 'WC_Admin_Notices' ) ) {
@@ -27,14 +27,14 @@ function genesis_sample_remove_woocommerce_notice() {
 
 }
 
-add_action( 'admin_notices', 'genesis_sample_woocommerce_theme_notice' );
+add_action( 'admin_notices', 'visual_voyager_woocommerce_theme_notice' );
 /**
  * Adds a prompt to activate Genesis Connect for WooCommerce
  * if WooCommerce is active but Genesis Connect is not.
  *
  * @since 2.3.0
  */
-function genesis_sample_woocommerce_theme_notice() {
+function visual_voyager_woocommerce_theme_notice() {
 
 	// If WooCommerce isn't installed or Genesis Connect is installed, exit early.
 	if ( ! class_exists( 'WooCommerce' ) || function_exists( 'gencwooc_setup' ) ) {
@@ -47,7 +47,7 @@ function genesis_sample_woocommerce_theme_notice() {
 	}
 
 	// If message dismissed, exit early.
-	if ( get_user_option( 'genesis_sample_woocommerce_message_dismissed', get_current_user_id() ) ) {
+	if ( get_user_option( 'visual_voyager_woocommerce_message_dismissed', get_current_user_id() ) ) {
 		return;
 	}
 
@@ -80,53 +80,53 @@ function genesis_sample_woocommerce_theme_notice() {
 
 }
 
-add_action( 'wp_ajax_genesis_sample_dismiss_woocommerce_notice', 'genesis_sample_dismiss_woocommerce_notice' );
+add_action( 'wp_ajax_visual_voyager_dismiss_woocommerce_notice', 'visual_voyager_dismiss_woocommerce_notice' );
 /**
  * Adds option to dismiss Genesis Connect for Woocommerce plugin install prompt.
  *
  * @since 2.3.0
  */
-function genesis_sample_dismiss_woocommerce_notice() {
+function visual_voyager_dismiss_woocommerce_notice() {
 
-	update_user_option( get_current_user_id(), 'genesis_sample_woocommerce_message_dismissed', 1 );
+	update_user_option( get_current_user_id(), 'visual_voyager_woocommerce_message_dismissed', 1 );
 
 }
 
-add_action( 'admin_enqueue_scripts', 'genesis_sample_notice_script' );
+add_action( 'admin_enqueue_scripts', 'visual_voyager_notice_script' );
 /**
  * Enqueues script to clear the Genesis Connect for WooCommerce plugin install prompt on dismissal.
  *
  * @since 2.3.0
  */
-function genesis_sample_notice_script() {
+function visual_voyager_notice_script() {
 
-	wp_enqueue_script( 'genesis_sample_notice_script', get_stylesheet_directory_uri() . '/lib/woocommerce/js/notice-update.js', [ 'jquery' ], '1.0', true );
+	wp_enqueue_script( 'visual_voyager_notice_script', get_stylesheet_directory_uri() . '/lib/woocommerce/js/notice-update.js', [ 'jquery' ], '1.0', true );
 
 }
 
-add_action( 'switch_theme', 'genesis_sample_reset_woocommerce_notice', 10, 2 );
+add_action( 'switch_theme', 'visual_voyager_reset_woocommerce_notice', 10, 2 );
 /**
  * Clears the Genesis Connect for WooCommerce plugin install prompt on theme change.
  *
  * @since 2.3.0
  */
-function genesis_sample_reset_woocommerce_notice() {
+function visual_voyager_reset_woocommerce_notice() {
 
 	global $wpdb;
 
 	$args  = [
-		'meta_key'   => $wpdb->prefix . 'genesis_sample_woocommerce_message_dismissed', // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_key
+		'meta_key'   => $wpdb->prefix . 'visual_voyager_woocommerce_message_dismissed', // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_key
 		'meta_value' => 1, // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_value
 	];
 	$users = get_users( $args );
 
 	foreach ( $users as $user ) {
-		delete_user_option( $user->ID, 'genesis_sample_woocommerce_message_dismissed' );
+		delete_user_option( $user->ID, 'visual_voyager_woocommerce_message_dismissed' );
 	}
 
 }
 
-add_action( 'deactivated_plugin', 'genesis_sample_reset_woocommerce_notice_on_deactivation', 10, 2 );
+add_action( 'deactivated_plugin', 'visual_voyager_reset_woocommerce_notice_on_deactivation', 10, 2 );
 /**
  * Clears the Genesis Connect for WooCommerce plugin prompt on deactivation.
  *
@@ -135,13 +135,13 @@ add_action( 'deactivated_plugin', 'genesis_sample_reset_woocommerce_notice_on_de
  * @param string $plugin The plugin slug.
  * @param bool   $network_deactivating Whether the plugin is deactivated for all sites in the network. or just the current site.
  */
-function genesis_sample_reset_woocommerce_notice_on_deactivation( $plugin, $network_deactivating ) {
+function visual_voyager_reset_woocommerce_notice_on_deactivation( $plugin, $network_deactivating ) {
 
 	// Conditional check to see if we're deactivating WooCommerce or Genesis Connect for WooCommerce.
 	if ( 'woocommerce/woocommerce.php' !== $plugin && 'genesis-connect-woocommerce/genesis-connect-woocommerce.php' !== $plugin ) {
 		return;
 	}
 
-	genesis_sample_reset_woocommerce_notice();
+	visual_voyager_reset_woocommerce_notice();
 
 }

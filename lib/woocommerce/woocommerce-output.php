@@ -10,7 +10,7 @@
  * @link    https://www.hellotham.com/
  */
 
-add_filter( 'woocommerce_enqueue_styles', 'genesis_sample_woocommerce_styles' );
+add_filter( 'woocommerce_enqueue_styles', 'visual_voyager_woocommerce_styles' );
 /**
  * Enqueues the theme's custom WooCommerce styles to the WooCommerce plugin.
  *
@@ -19,7 +19,7 @@ add_filter( 'woocommerce_enqueue_styles', 'genesis_sample_woocommerce_styles' );
  *
  * @return array Modified WooCommerce styles to enqueue.
  */
-function genesis_sample_woocommerce_styles( $enqueue_styles ) {
+function visual_voyager_woocommerce_styles( $enqueue_styles ) {
 
 	$enqueue_styles[ genesis_get_theme_handle() . '-woocommerce-styles' ] = [
 		'src'     => get_stylesheet_directory_uri() . '/lib/woocommerce/visual-voyager-woocommerce.css',
@@ -32,7 +32,7 @@ function genesis_sample_woocommerce_styles( $enqueue_styles ) {
 
 }
 
-add_action( 'wp_enqueue_scripts', 'genesis_sample_woocommerce_css' );
+add_action( 'wp_enqueue_scripts', 'visual_voyager_woocommerce_css' );
 /**
  * Adds the themes's custom CSS to the WooCommerce stylesheet.
  *
@@ -40,7 +40,7 @@ add_action( 'wp_enqueue_scripts', 'genesis_sample_woocommerce_css' );
  *
  * @return string CSS to be outputted after the theme's custom WooCommerce stylesheet.
  */
-function genesis_sample_woocommerce_css() {
+function visual_voyager_woocommerce_css() {
 
 	// If WooCommerce isn't active, exit early.
 	if ( ! class_exists( 'WooCommerce' ) ) {
@@ -49,8 +49,8 @@ function genesis_sample_woocommerce_css() {
 
 	$appearance = genesis_get_config( 'appearance' );
 
-	$color_link   = get_theme_mod( 'genesis_sample_link_color', $appearance['default-colors']['link'] );
-	$color_accent = get_theme_mod( 'genesis_sample_accent_color', $appearance['default-colors']['accent'] );
+	$color_link   = get_theme_mod( 'visual_voyager_link_color', $appearance['default-colors']['link'] );
+	$color_accent = get_theme_mod( 'visual_voyager_accent_color', $appearance['default-colors']['accent'] );
 
 	$woo_css = '';
 
@@ -116,7 +116,7 @@ function genesis_sample_woocommerce_css() {
 
 	',
 		$color_accent,
-		genesis_sample_color_contrast( $color_accent )
+		visual_voyager_color_contrast( $color_accent )
 	) : '';
 
 	if ( $woo_css ) {

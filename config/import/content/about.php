@@ -13,11 +13,11 @@
  */
 
 // Photo by Fabrice Villard on Unsplash.
-$genesis_sample_about_image_url = CHILD_URL . '/config/import/images/about.jpg';
+$visual_voyager_about_image_url = CHILD_URL . '/config/import/images/about.jpg';
 
 return <<<CONTENT
 <!-- wp:image {"id":2141,"align":"center"} -->
-<div class="wp-block-image"><figure class="aligncenter"><img src="$genesis_sample_about_image_url" alt="" class="wp-image-2141"/></figure></div>
+<div class="wp-block-image"><figure class="aligncenter"><img src="$visual_voyager_about_image_url" alt="" class="wp-image-2141"/></figure></div>
 <!-- /wp:image -->
 
 <!-- wp:atomic-blocks/ab-spacer {"spacerHeight":29} -->

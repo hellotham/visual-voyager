@@ -62,7 +62,7 @@
 	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
 		<properties>
 			<property name="prefixes" type="array">
-				<element value="genesis_sample"/>
+				<element value="visual_voyager"/>
 				<element value="CHILD_THEME"/>
 			</property>
 		</properties>

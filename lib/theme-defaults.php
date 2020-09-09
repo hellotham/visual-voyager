@@ -10,7 +10,7 @@
  * @link    https://www.hellotham.com/
  */
 
-add_filter( 'simple_social_default_styles', 'genesis_sample_social_default_styles' );
+add_filter( 'simple_social_default_styles', 'visual_voyager_social_default_styles' );
 /**
  * Set Simple Social Icon defaults.
  *
@@ -19,7 +19,7 @@ add_filter( 'simple_social_default_styles', 'genesis_sample_social_default_style
  * @param array $defaults Social style defaults.
  * @return array Modified social style defaults.
  */
-function genesis_sample_social_default_styles( $defaults ) {
+function visual_voyager_social_default_styles( $defaults ) {
 
 	$args = genesis_get_config( 'simple-social-icons-settings' );
 

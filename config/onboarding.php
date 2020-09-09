@@ -10,7 +10,7 @@
  * @link    https://www.hellotham.com/
  */
 
-$genesis_sample_shared_content = genesis_get_config( 'onboarding-shared' );
+$visual_voyager_shared_content = genesis_get_config( 'onboarding-shared' );
 
 return [
 	'starter_packs' => [
@@ -21,7 +21,7 @@ return [
 			'demo_url'    => 'https://visualvoyager.netgenesis-sample/',
 			'config'      => [
 				'dependencies'     => [
-					'plugins' => $genesis_sample_shared_content['plugins'],
+					'plugins' => $visual_voyager_shared_content['plugins'],
 				],
 				'content'          => array_merge(
 					[
@@ -40,10 +40,10 @@ return [
 							],
 						],
 					],
-					$genesis_sample_shared_content['content']
+					$visual_voyager_shared_content['content']
 				),
-				'navigation_menus' => $genesis_sample_shared_content['navigation_menus'],
-				'widgets'          => $genesis_sample_shared_content['widgets'],
+				'navigation_menus' => $visual_voyager_shared_content['navigation_menus'],
+				'widgets'          => $visual_voyager_shared_content['widgets'],
 			],
 		],
 		'color'       => [
@@ -53,7 +53,7 @@ return [
 			'demo_url'    => 'https://visualvoyager.netgenesis-sample/home-color/',
 			'config'      => [
 				'dependencies'     => [
-					'plugins' => $genesis_sample_shared_content['plugins'],
+					'plugins' => $visual_voyager_shared_content['plugins'],
 				],
 				'content'          => array_merge(
 					[
@@ -72,10 +72,10 @@ return [
 							],
 						],
 					],
-					$genesis_sample_shared_content['content']
+					$visual_voyager_shared_content['content']
 				),
-				'navigation_menus' => $genesis_sample_shared_content['navigation_menus'],
-				'widgets'          => $genesis_sample_shared_content['widgets'],
+				'navigation_menus' => $visual_voyager_shared_content['navigation_menus'],
+				'widgets'          => $visual_voyager_shared_content['widgets'],
 			],
 		],
 	],
