@@ -1289,8 +1289,9 @@ figcaption,
 --------------------------------------------- */
 
 p.entry-meta {
-	font-size: 16px;
+	font-size: 14px;
 	margin-bottom: 0;
+	color: #555;
 }
 
 .entry-header .entry-meta {
@@ -1305,6 +1306,45 @@ p.entry-meta {
 .entry-categories,
 .entry-tags {
 	display: block;
+}
+
+.entry-categories a {
+	padding: 6px 5px;
+	margin-right: 0;
+	margin-bottom: 4px;
+	line-height: 100%;
+	display: inline-block;
+	background-color: #660099;
+	color: #fff;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	text-decoration: none;
+}
+
+.entry-tags a {
+	padding: 6px 5px;
+	margin-right: 0;
+	margin-bottom: 4px;
+	line-height: 100%;
+	display: inline-block;
+	border: 1px solid #660099;
+	color: #660099;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	text-decoration: none;
+}
+
+.entry-categories a:hover {
+	background-color: #cc3366;
+	border-color: #660099;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.entry-tags a:hover {
+	border-color: #cc3366;
+	border: 1px solid #cc3366;
+	text-decoration: none;
 }
 
 .entry-comments-link::before {

@@ -33,6 +33,13 @@ return [
 		'search-form',
 		'skip-links',
 	],
+	'genesis-structural-wraps'        => [
+		'header',
+		'menu-primary',
+		'menu-secondary',
+		'footer-widgets',
+		'footer',
+	],
 	'genesis-after-entry-widget-area' => '',
 	'genesis-footer-widgets'          => 3,
 	'genesis-menus'                   => [
