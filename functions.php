@@ -241,3 +241,22 @@ function visual_voyager_portfolio_query( $query ) {
 	}
 }
 add_action( 'pre_get_posts', 'visual_voyager_portfolio_query' );
+
+/**
+ * Grid Loop on Portfolio archive
+ *
+ * @author Bill Erickson
+ * @link https://github.com/billerickson/Genesis-Grid/wiki/Home
+ *
+ * @param bool   $grid  whether to use grid loop.
+ * @param object $query   the WP Query.
+ * @return bool
+ */
+function visual_voyager_grid_loop_on_portfolio( $grid, $query ) {
+	if ( is_post_type_archive( 'portfolio' ) ) {
+		$grid = true;
+	}
+
+	return $grid;
+}
+add_filter( 'genesis_grid_loop_section', 'visual_voyager_grid_loop_on_portfolio', 10, 2 );
