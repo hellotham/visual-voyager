@@ -1161,7 +1161,7 @@ figcaption,
 }
 
 .menu-toggle {
-	float: right;
+	float: left;
 	line-height: 20px;
 	margin-bottom: 10px;
 	margin-top: 10px;

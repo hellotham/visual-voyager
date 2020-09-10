@@ -16,10 +16,9 @@ require_once get_template_directory() . '/lib/init.php';
 // Sets up the Theme.
 require_once get_stylesheet_directory() . '/lib/theme-defaults.php';
 
-//define( ‘CHILD_THEME_NAME’, __( ‘Visual Voyager’, visual-voyager ) );
-//define( ‘CHILD_THEME_URL’, ‘https://visualvoyager.net/’ );
-//define( ‘CHILD_THEME_VERSION’, '1.0.0′ );
-
+// define( ‘CHILD_THEME_NAME’, __( ‘Visual Voyager’, visual-voyager ) );
+// define( ‘CHILD_THEME_URL’, ‘https://visualvoyager.net/’ );
+// define( ‘CHILD_THEME_VERSION’, '1.0.0′ );
 add_action( 'after_setup_theme', 'visual_voyager_localization_setup' );
 /**
  * Sets localization (do not remove).
@@ -137,7 +136,6 @@ add_image_size( 'genesis-singular-images', 1500, 1000, true );
 
 // Removes header right widget area.
 // unregister_sidebar( 'header-right' );
-
 // Removes secondary sidebar.
 unregister_sidebar( 'sidebar-alt' );
 
@@ -206,12 +204,12 @@ function visual_voyager_comments_gravatar( $args ) {
 
 /**
  * Portfolio Template for Taxonomies
- * 
  */
 function be_portfolio_template( $template ) {
-  if( is_tax( array( 'portfolio_category', 'portfolio_tag' ) ) )
-    $template = get_query_template( 'archive-portfolio' );
-  return $template;
+	if ( is_tax( [ 'portfolio_category', 'portfolio_tag' ] ) ) {
+		$template = get_query_template( 'archive-portfolio' );
+	}
+	return $template;
 }
 add_filter( 'template_include', 'be_portfolio_template' );
 
@@ -228,11 +226,10 @@ function be_portfolio_post_type_args( $args ) {
 add_filter( 'portfolioposttype_args', 'be_portfolio_post_type_args' );
 
 /**
- * Sort projects by menu order 
- *
+ * Sort projects by menu order
  */
 function be_portfolio_query( $query ) {
-	if( $query->is_main_query() && !is_admin() && ( is_post_type_archive( 'portfolio' ) || is_tax( array( 'portfolio_category', 'portfolio_tag' ) ) ) ) {
+	if ( $query->is_main_query() && ! is_admin() && ( is_post_type_archive( 'portfolio' ) || is_tax( [ 'portfolio_category', 'portfolio_tag' ] ) ) ) {
 		$query->set( 'orderby', 'menu_order' );
 		$query->set( 'order', 'ASC' );
 	}

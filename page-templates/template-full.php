@@ -1,6 +1,5 @@
 <?php
 // Template Name: Full Width
-
 add_filter( 'genesis_attr_site-inner', 'be_site_inner_attr' );
 /**
  * Adds the attributes from 'entry', since this replaces the main entry.
@@ -13,16 +12,16 @@ add_filter( 'genesis_attr_site-inner', 'be_site_inner_attr' );
  */
 function be_site_inner_attr( $attributes ) {
 
-    // Adds a class of 'full' for styling this .site-inner differently
-    $attributes['class'] .= ' full';
+	// Adds a class of 'full' for styling this .site-inner differently
+	$attributes['class'] .= ' full';
 
-    // Adds an id of 'genesis-content' for accessible skip links
-    $attributes['id'] = 'genesis-content';
+	// Adds an id of 'genesis-content' for accessible skip links
+	$attributes['id'] = 'genesis-content';
 
-    // Adds the attributes from .entry, since this replaces the main entry
-    $attributes = wp_parse_args( $attributes, genesis_attributes_entry( array() ) );
+	// Adds the attributes from .entry, since this replaces the main entry
+	$attributes = wp_parse_args( $attributes, genesis_attributes_entry( [] ) );
 
-    return $attributes;
+	return $attributes;
 }
 
 // Displays Header.
