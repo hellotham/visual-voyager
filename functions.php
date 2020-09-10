@@ -204,35 +204,40 @@ function visual_voyager_comments_gravatar( $args ) {
 }
 
 /**
- * Portfolio Template for Taxonomies
+ * Portfolio Template for Taxonomies.
+ *
+ * @param html $template Template for portfolio.
+ * @return html $template
  */
-function be_portfolio_template( $template ) {
+function visual_voyager_portfolio_template( $template ) {
 	if ( is_tax( [ 'portfolio_category', 'portfolio_tag' ] ) ) {
 		$template = get_query_template( 'archive-portfolio' );
 	}
 	return $template;
 }
-add_filter( 'template_include', 'be_portfolio_template' );
+add_filter( 'template_include', 'visual_voyager_portfolio_template' );
 
 /**
- * Add 'page-attributes' to Portfolio Post Type
+ * Add 'page-attributes' to Portfolio Post Type.
  *
- * @param array $args, arguments passed to register_post_type
+ * @param array $args arguments passed to register_post_type.
  * @return array $args
  */
-function be_portfolio_post_type_args( $args ) {
+function visual_voyager_portfolio_post_type_args( $args ) {
 	$args['supports'][] = 'page-attributes';
 	return $args;
 }
-add_filter( 'portfolioposttype_args', 'be_portfolio_post_type_args' );
+add_filter( 'portfolioposttype_args', 'visual_voyager_portfolio_post_type_args' );
 
 /**
  * Sort projects by menu order
+ *
+ * @param text $query portfolio query.
  */
-function be_portfolio_query( $query ) {
+function visual_voyager_portfolio_query( $query ) {
 	if ( $query->is_main_query() && ! is_admin() && ( is_post_type_archive( 'portfolio' ) || is_tax( [ 'portfolio_category', 'portfolio_tag' ] ) ) ) {
 		$query->set( 'orderby', 'menu_order' );
 		$query->set( 'order', 'ASC' );
 	}
 }
-add_action( 'pre_get_posts', 'be_portfolio_query' );
+add_action( 'pre_get_posts', 'visual_voyager_portfolio_query' );

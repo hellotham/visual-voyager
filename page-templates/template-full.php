@@ -1,6 +1,19 @@
 <?php
-// Template Name: Full Width
-add_filter( 'genesis_attr_site-inner', 'be_site_inner_attr' );
+/**
+ * Visual Voyager.
+ *
+ * This file adds the Full Width page template to the Visual Voyager Theme.
+ *
+ * Template Name: Full Width
+ *
+ * @package Visual Voyager
+ * @author  HelloTham
+ * @license GPL-2.0-or-later
+ * @link    https://www.hellotham.com/
+ */
+
+add_filter( 'genesis_attr_site-inner', 'visual_voyager_site_inner_attr' );
+
 /**
  * Adds the attributes from 'entry', since this replaces the main entry.
  *
@@ -10,15 +23,15 @@ add_filter( 'genesis_attr_site-inner', 'be_site_inner_attr' );
  * @param array $attributes Existing attributes.
  * @return array Amended attributes.
  */
-function be_site_inner_attr( $attributes ) {
+function visual_voyager_site_inner_attr( $attributes ) {
 
-	// Adds a class of 'full' for styling this .site-inner differently
+	// Adds a class of 'full' for styling this .site-inner differently.
 	$attributes['class'] .= ' full';
 
-	// Adds an id of 'genesis-content' for accessible skip links
+	// Adds an id of 'genesis-content' for accessible skip links.
 	$attributes['id'] = 'genesis-content';
 
-	// Adds the attributes from .entry, since this replaces the main entry
+	// Adds the attributes from .entry, since this replaces the main entry.
 	$attributes = wp_parse_args( $attributes, genesis_attributes_entry( [] ) );
 
 	return $attributes;
