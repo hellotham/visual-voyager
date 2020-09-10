@@ -16,9 +16,9 @@ require_once get_template_directory() . '/lib/init.php';
 // Sets up the Theme.
 require_once get_stylesheet_directory() . '/lib/theme-defaults.php';
 
-// define( ‘CHILD_THEME_NAME’, __( ‘Visual Voyager’, visual-voyager ) );
-// define( ‘CHILD_THEME_URL’, ‘https://visualvoyager.net/’ );
-// define( ‘CHILD_THEME_VERSION’, '1.0.0′ );
+define( 'CHILD_THEME_NAME', 'Visual Voyager' );
+define( 'CHILD_THEME_URL', 'https://visualvoyager.net/' );
+define( 'CHILD_THEME_VERSION', '1.0.0' );
 
 add_action( 'after_setup_theme', 'visual_voyager_localization_setup' );
 /**

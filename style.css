@@ -1460,8 +1460,8 @@ p.entry-meta {
 ---------------------------------------------------------------------------- */
 
 .footer-widgets {
-	border-top: 1px solid #eee;
-	background-color: #fff;
+	border-top: 1px solid #ccc;
+	background-color: #eee;
 	clear: both;
 	padding: 60px 0;
 }
@@ -1487,9 +1487,9 @@ p.entry-meta {
 ---------------------------------------------------------------------------- */
 
 .site-footer {
-	background-color: #fff;
-	border-top: 1px solid #eee;
-	font-size: 15px;
+	background-color: #eee;
+	border-top: 1px solid #ccc;
+	font-size: 12px;
 	line-height: 1.5;
 	padding: 30px;
 	text-align: center;
@@ -1556,7 +1556,7 @@ p.entry-meta {
 
 	.genesis-nav-menu > .menu-highlight > a:focus,
 	.genesis-nav-menu > .menu-highlight > a:hover {
-		background-color: #0073e5;
+		background-color: #660099;
 	}
 
 	.genesis-nav-menu .sub-menu,
@@ -1745,7 +1745,7 @@ p.entry-meta {
 	--------------------------------------------- */
 
 	.footer-widgets .wrap {
-		max-width: 1140px;
+		max-width: 1500px;
 	}
 
 	.footer-widget-area {
