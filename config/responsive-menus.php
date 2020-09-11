@@ -14,7 +14,12 @@
 return [
 	'script' => [
 		'menuClasses' => [
-			'others' => [ '.nav-primary' ],
+			'mainMenu'    => __( 'Menu', 'kreativ-pro' ),
+			'subMenu'     => __( 'Menu', 'kreativ-pro' ),
+			'others' => [
+				'.nav-primary',
+				'.nav-secondary',
+			],
 		],
 	],
 	'extras' => [

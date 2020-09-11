@@ -83,6 +83,8 @@ function visual_voyager_enqueue_scripts_styles() {
 	);
 
 	wp_enqueue_style( 'dashicons' );
+	wp_enqueue_style( 'kreativ-font-awesome', '//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), '4.7.0' );
+	wp_enqueue_style( 'kreativ-line-awesome', '//maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css', array(), '1.1' );
 
 	if ( genesis_is_amp() ) {
 		wp_enqueue_style(
@@ -92,6 +94,18 @@ function visual_voyager_enqueue_scripts_styles() {
 			genesis_get_theme_version()
 		);
 	}
+
+}
+
+// Enqueue RTL Styles.
+add_action( 'wp_enqueue_scripts', 'kreativ_rtl_styles', 12 );
+function kreativ_rtl_styles() {
+	// Load RTL stylesheet.
+	if ( ! is_rtl() ) {
+		return;
+	}
+
+	wp_enqueue_style( 'kreativ-rtl', get_stylesheet_directory_uri() . '/rtl/style-rtl.css', array(), genesis_get_theme_version() );
 
 }
 
@@ -131,12 +145,27 @@ function visual_voyager_post_type_support() {
 
 }
 
+add_action( 'genesis_site_title', 'kreativ_custom_logo', 0 );
+/**
+ * Display the custom logo.
+ *
+ * @since 1.1.0
+ */
+function kreativ_custom_logo() {
+	if ( function_exists( 'the_custom_logo' ) ) {
+		the_custom_logo();
+	}
+}
+
 // Adds image sizes.
 add_image_size( 'sidebar-featured', 75, 75, true );
 add_image_size( 'genesis-singular-images', 1500, 1000, true );
+add_image_size( 'blog', '800', '400', true );
+add_image_size( 'portfolio', '570', '390', true );
 
 // Removes header right widget area.
-// unregister_sidebar( 'header-right' );
+unregister_sidebar( 'header-right' );
+
 // Removes secondary sidebar.
 unregister_sidebar( 'sidebar-alt' );
 
@@ -145,15 +174,75 @@ genesis_unregister_layout( 'content-sidebar-sidebar' );
 genesis_unregister_layout( 'sidebar-content-sidebar' );
 genesis_unregister_layout( 'sidebar-sidebar-content' );
 
-// Repositions primary navigation menu.
+// Add Genesis Layouts to Portfolio.
+add_post_type_support( 'portfolio', 'genesis-layouts' );
+
+// Register widget areas.
+genesis_register_sidebar( array(
+	'id'          => 'topbar',
+	'name'        => __( 'Topbar', 'kreativ-pro' ),
+	'description' => __( 'This is the topbar section.', 'kreativ-pro' ),
+) );
+
+// Topbar with contact info and social links.
+add_action( 'genesis_before_header', 'kreativ_topbar' );
+function kreativ_topbar() {
+	genesis_widget_area( 'topbar', array(
+		'before' => '<div class="site-topbar"><div class="wrap">',
+		'after'  => '</div></div>',
+	) );
+}
+
+// Sticky Header.
+add_filter( 'body_class', 'kreativ_sticky_header_class' );
+function kreativ_sticky_header_class( $classes ) {
+	$sticky_header = get_option( 'kreativ_sticky_header' );
+	$classes[]     = 'sticky-header-active';
+	return $classes;
+}
+
+// Reposition the primary navigation menu.
 remove_action( 'genesis_after_header', 'genesis_do_nav' );
 add_action( 'genesis_header', 'genesis_do_nav', 12 );
 
-// Repositions the secondary navigation menu.
-remove_action( 'genesis_after_header', 'genesis_do_subnav' );
-add_action( 'genesis_footer', 'genesis_do_subnav', 10 );
+// Hook menu in footer.
+add_action( 'genesis_footer', 'kreativ_footer_menu', 12 );
+function kreativ_footer_menu() {
+	printf( '<nav %s>', genesis_attr( 'nav-footer' ) );
+	wp_nav_menu( array(
+		'theme_location' => 'footer',
+		'container'      => false,
+		'depth'          => 1,
+		'fallback_cb'    => false,
+		'menu_class'     => 'genesis-nav-menu',
+	) );
+	echo '</nav>';
+}
 
-add_filter( 'wp_nav_menu_args', 'visual_voyager_secondary_menu_args' );
+// Nav footer attributes.
+add_filter( 'genesis_attr_nav-footer', 'kreativ_footer_nav_attr' );
+function kreativ_footer_nav_attr( $attributes ) {
+	$attributes['itemscope'] = true;
+	$attributes['itemtype']  = 'http://schema.org/SiteNavigationElement';
+	return $attributes;
+}
+
+// Add skip link needs to footer nav.
+add_filter( 'genesis_attr_nav-footer', 'kreativ_nav_footer_id' );
+function kreativ_nav_footer_id( $attributes ) {
+	$attributes['id'] = 'genesis-nav-footer';
+	return $attributes;
+}
+
+// Add skip link needs to footer nav.
+add_filter( 'genesis_skip_links_output', 'kreativ_nav_footer_skip_link' );
+function kreativ_nav_footer_skip_link( $links ) {
+	if ( has_nav_menu( 'footer' ) ) {
+		$links['genesis-nav-footer'] = __( 'Skip to footer navigation', 'kreativ-pro' );
+	}
+	return $links;
+}
+
 /**
  * Reduces secondary navigation menu to one level depth.
  *

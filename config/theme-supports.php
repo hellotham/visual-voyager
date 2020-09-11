@@ -11,12 +11,14 @@
  */
 
 return [
+/*
 	'genesis-custom-logo'             => [
 		'height'      => 120,
 		'width'       => 700,
 		'flex-height' => true,
 		'flex-width'  => true,
 	],
+*/
 	'html5'                           => [
 		'caption',
 		'comment-form',
@@ -37,13 +39,30 @@ return [
 		'header',
 		'menu-primary',
 		'menu-secondary',
+		'menu-footer',
 		'footer-widgets',
 		'footer',
 	],
 	'genesis-after-entry-widget-area' => '',
 	'genesis-footer-widgets'          => 3,
 	'genesis-menus'                   => [
-		'primary'   => __( 'Header Menu', 'visual-voyager' ),
-		'secondary' => __( 'Footer Menu', 'visual-voyager' ),
+		'primary'   => __( 'Primary Menu', 'visual-voyager' ),
+		'secondary' => __( 'Secondary Menu', 'visual-voyager' ),
+		'footer' => __( 'Footer Menu', 'visual-voyager' ),
+	],
+	'custom-header'             => [
+		'width'           => 1600,
+		'height'          => 1200,
+		'flex-height'     => true,
+		'flex-width'      => true,
+		'header-selector' => '.site-header',
+		'header-text'     => false,
+	],
+	'custom-logo'             => [
+		'width'       => 300,
+		'height'      => 60,
+		'flex-height' => true,
+		'flex-width'  => true,
+		'header-text' => [ '.site-title', '.site-description' ],
 	],
 ];

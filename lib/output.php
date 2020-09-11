@@ -95,7 +95,7 @@ function visual_voyager_css() {
 		$color_accent,
 		visual_voyager_color_contrast( $color_accent )
 	) : '';
-
+/*
 	$css .= ( has_custom_logo() && ( 200 <= $logo_effective_height ) ) ?
 		'
 		.site-header {
@@ -147,7 +147,7 @@ function visual_voyager_css() {
 		',
 		$logo_padding + 5
 	) : '';
-
+*/
 	if ( $css ) {
 		wp_add_inline_style( genesis_get_theme_handle(), $css );
 	}

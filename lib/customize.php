@@ -63,7 +63,7 @@ function visual_voyager_customizer_register( $wp_customize ) {
 			]
 		)
 	);
-
+/*
 	$wp_customize->add_setting(
 		'visual_voyager_logo_width',
 		[
@@ -89,7 +89,7 @@ function visual_voyager_customizer_register( $wp_customize ) {
 
 		]
 	);
-
+*/
 }
 
 /**
