@@ -191,6 +191,10 @@ genesis_unregister_layout( 'sidebar-sidebar-content' );
 // Add Genesis Layouts to Portfolio.
 add_post_type_support( 'portfolio', 'genesis-layouts' );
 
+// Move image above post title.
+// remove_action( 'genesis_entry_content', 'genesis_do_post_image', 8 );
+// add_action( 'genesis_entry_header', 'genesis_do_post_image', 8 );
+
 // Register widget areas.
 genesis_register_sidebar(
 	[
@@ -236,7 +240,7 @@ add_action( 'genesis_footer', 'visual_voyager_footer_menu', 12 );
  * Hook menu in footer.
  */
 function visual_voyager_footer_menu() {
-	printf( '<nav %s>', esc_attr( genesis_attr( 'nav-footer' ) ) );
+	printf( '<nav %s>', genesis_attr( 'nav-footer' ) );
 	wp_nav_menu(
 		[
 			'theme_location' => 'footer',
@@ -346,26 +350,6 @@ function visual_voyager_comments_gravatar( $args ) {
 	return $args;
 
 }
-
-/**
- * Grid Loop on Portfolio archive
- *
- * @author Bill Erickson
- * @link https://github.com/billerickson/Genesis-Grid/wiki/Home
- *
- * @param bool   $grid  whether to use grid loop.
- * @param object $query   the WP Query.
- * @return bool
- */
-function visual_voyager_grid_loop_on_portfolio( $grid, $query ) {
-	if ( is_post_type_archive( 'portfolio' ) ) {
-		$grid = true;
-	}
-
-	return $grid;
-}
-add_filter( 'genesis_grid_loop_section', 'visual_voyager_grid_loop_on_portfolio', 10, 2 );
-
 
 /** Force full width layout on all archive pages*/
 add_filter( 'genesis_pre_get_option_site_layout', 'visual_voyager_full_width_layout_archives' );
