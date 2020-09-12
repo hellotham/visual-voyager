@@ -63,7 +63,45 @@ function visual_voyager_customizer_register( $wp_customize ) {
 			]
 		)
 	);
-/*
+
+	// Add theme layout setting to the Customizer.
+	$wp_customize->add_section(
+		'visual_voyager_sticky_header_section',
+		[
+			'title'       => __( 'Sticky Header', 'visual-voyager' ),
+			'description' => __( 'Choose if you would like to display sticky header fixed to the top of page.', 'visual-voyager' ),
+			'priority'    => 80.01,
+		]
+	);
+
+	// Add theme layout setting to the Customizer.
+	$wp_customize->add_setting(
+		'visual_voyager_sticky_header',
+		[
+			'capability' => 'edit_theme_options',
+			'type'       => 'option',
+			'default'    => '',
+		]
+	);
+
+	$wp_customize->add_control(
+		new WP_Customize_Control(
+			$wp_customize,
+			'visual_voyager_sticky_header',
+			[
+				'label'    => __( 'Sticky Header', 'visual-voyager' ),
+				'section'  => 'visual_voyager_sticky_header_section',
+				'settings' => 'visual_voyager_sticky_header',
+				'type'     => 'radio',
+				'choices'  => [
+					''        => __( 'Enable', 'visual-voyager' ),
+					'disable' => __( 'Disable', 'visual-voyager' ),
+				],
+			]
+		)
+	);
+
+	/*
 	$wp_customize->add_setting(
 		'visual_voyager_logo_width',
 		[
@@ -89,7 +127,7 @@ function visual_voyager_customizer_register( $wp_customize ) {
 
 		]
 	);
-*/
+	*/
 }
 
 /**

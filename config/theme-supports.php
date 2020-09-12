@@ -11,14 +11,6 @@
  */
 
 return [
-/*
-	'genesis-custom-logo'             => [
-		'height'      => 120,
-		'width'       => 700,
-		'flex-height' => true,
-		'flex-width'  => true,
-	],
-*/
 	'html5'                           => [
 		'caption',
 		'comment-form',
@@ -48,9 +40,9 @@ return [
 	'genesis-menus'                   => [
 		'primary'   => __( 'Primary Menu', 'visual-voyager' ),
 		'secondary' => __( 'Secondary Menu', 'visual-voyager' ),
-		'footer' => __( 'Footer Menu', 'visual-voyager' ),
+		'footer'    => __( 'Footer Menu', 'visual-voyager' ),
 	],
-	'custom-header'             => [
+	'custom-header'                   => [
 		'width'           => 1600,
 		'height'          => 1200,
 		'flex-height'     => true,
@@ -58,7 +50,7 @@ return [
 		'header-selector' => '.site-header',
 		'header-text'     => false,
 	],
-	'custom-logo'             => [
+	'custom-logo'                     => [
 		'width'       => 300,
 		'height'      => 60,
 		'flex-height' => true,

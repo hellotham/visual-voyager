@@ -95,7 +95,51 @@ function visual_voyager_css() {
 		$color_accent,
 		visual_voyager_color_contrast( $color_accent )
 	) : '';
-/*
+
+	// Add theme accent color.
+	$css .= ( $default !== $color_accent ) ? sprintf(
+		'
+
+		a,
+		.entry-title a:hover,
+		.entry-title a:focus,
+		.genesis-nav-menu a:hover,
+		.entry-meta a:hover,
+		.comment-list .comment-time a:hover,
+		.sidebar li:before,
+		.sidebar li a:hover,
+		.site-footer a:hover,
+		.site-topbar a:hover,
+		.nav-footer .genesis-nav-menu a:hover,
+		.featured-portfolio .entry .entry-title a:hover {
+			color: %1$s;
+		}
+
+		button,
+		input[type="button"],
+		input[type="reset"],
+		input[type="submit"],
+		.button,
+		.more-link,
+		.archive-pagination li a:hover,
+		.archive-pagination li a:focus,
+		.archive-pagination .active a,
+		.content .entry .entry-header > a:after,
+		.footer-widgets .enews-widget input[type="submit"],
+		.gallery-item .gallery-icon > a:after,
+		.portfolio-content .entry-thumbnail:after,
+		.portfolio-filter a.active,
+		.portfolio-filter a:hover,
+		.featured-portfolio .entry .entry-thumbnail:after,
+		.genesis-pro-portfolio .entry .portfolio-featured-image:after {
+			background-color: %1$s;
+		}
+
+	',
+		$color_accent
+	) : '';
+
+	/*
 	$css .= ( has_custom_logo() && ( 200 <= $logo_effective_height ) ) ?
 		'
 		.site-header {
@@ -147,7 +191,7 @@ function visual_voyager_css() {
 		',
 		$logo_padding + 5
 	) : '';
-*/
+	*/
 	if ( $css ) {
 		wp_add_inline_style( genesis_get_theme_handle(), $css );
 	}
