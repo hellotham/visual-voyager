@@ -2,7 +2,7 @@
 	"name": "hellotham/visual-voyager",
 	"type": "wordpress-theme",
 	"description": "Visual Voyager child theme for the Genesis Framework",
-	"homepage": "https://github.com/ChristineTham/visual-voyager",
+	"homepage": "https://github.com/hellotham/visual-voyager",
 	"license": "GPL-2.0-or-later",
 	"authors": [
 		{
@@ -30,7 +30,7 @@
 		"phpcbf": "phpcbf"
 	},
 	"support": {
-		"issues": "https://github.com/ChristineTham/visual-voyager/issues",
-		"source": "https://github.com/ChristineTham/visual-voyager"
+		"issues": "https://github.com/hellotham/visual-voyager/issues",
+		"source": "https://github.com/hellotham/visual-voyager"
 	}
 }

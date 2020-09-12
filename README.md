@@ -1,7 +1,10 @@
 # Visual Voyager Theme
 
-GitHub project link: https://github.com/ChristineTham/visual-voyager/.
+![screenshot](https://github.com/hellotham/visual-voyager/raw/develop/screenshot.png)
 
+GitHub project link: https://github.com/hellotham/visual-voyager/.
+
+Live site: https://visualvoyager.net
 
 ## Installation Instructions
 
@@ -16,7 +19,7 @@ Please visit https://hellotham.com/contact/ for theme support.
 
 ## For Developers
 
-The version of [Visual Voyager on GitHub](https://github.com/studiopress/visual-voyager/) includes tooling to check code against WordPress standards. To use it:
+The version of [Visual Voyager on GitHub](https://github.com/hellotham/visual-voyager/) includes tooling to check code against WordPress standards. To use it:
 
 1. Install Composer globally on your development machine. [See Composer setup steps](https://getcomposer.org/doc/00-intro.md#downloading-the-composer-executable).
 2. In the command line, change directory to the Visual Voyager folder.

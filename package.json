@@ -3,7 +3,7 @@
 	"description": "Visual Voyager WordPress Genesis Child theme, based on Genesis Sample.",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/ChristineTham/visual-voyager/"
+		"url": "https://github.com/hellotham/visual-voyager/"
 	},
 	"license": "GPL-2.0-or-later",
 	"devDependencies": {
