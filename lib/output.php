@@ -97,7 +97,7 @@ function visual_voyager_css() {
 	) : '';
 
 	// Add theme accent color.
-	$css .= ( $default !== $color_accent ) ? sprintf(
+	$css .= ( $appearance['default-colors']['accent'] !== $color_accent ) ? sprintf(
 		'
 
 		a,
