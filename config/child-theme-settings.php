@@ -1,10 +1,10 @@
 <?php
 /**
- * Visual Voyager theme settings.
+ * Milennial Pink theme settings.
  *
  * Genesis 2.9+ updates these settings when themes are activated.
  *
- * @package Visual Voyager
+ * @package Milennial Pink
  * @author  HelloTham
  * @license GPL-2.0-or-later
  * @link    https://www.hellotham.com/
@@ -25,7 +25,7 @@ return [
 		'content_archive_limit'     => 0,
 		'content_archive_thumbnail' => 1,
 		'entry_meta_after_content'  => '[post_categories before="Categories: " sep=" "] [post_tags before="Tags: " sep=" "]',
-		'entry_meta_before_content' => '[post_date] ' . __( 'by', 'visual-voyager' ) . ' [post_author_posts_link] [post_comments] [post_edit]',
+		'entry_meta_before_content' => '[post_date] ' . __( 'by', 'milennial-pink' ) . ' [post_author_posts_link] [post_comments] [post_edit]',
 		'image_size'                => 'genesis-singular-images',
 		'image_alignment'           => 'aligncenter',
 		'posts_nav'                 => 'numeric',

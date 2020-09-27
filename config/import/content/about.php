@@ -1,23 +1,23 @@
 <?php
 /**
- * Visual Voyager.
+ * Milennial Pink.
  *
  * About page content optionally installed after theme activation.
  *
  * Visit `/wp-admin/admin.php?page=genesis-getting-started` to trigger import.
  *
- * @package Visual Voyager
+ * @package Milennial Pink
  * @author  HelloTham
  * @license GPL-2.0-or-later
  * @link    https://www.hellotham.com/
  */
 
 // Photo by Fabrice Villard on Unsplash.
-$visual_voyager_about_image_url = CHILD_URL . '/config/import/images/about.jpg';
+$milennial_pink_about_image_url = CHILD_URL . '/config/import/images/about.jpg';
 
 return <<<CONTENT
 <!-- wp:image {"id":2141,"align":"center"} -->
-<div class="wp-block-image"><figure class="aligncenter"><img src="$visual_voyager_about_image_url" alt="" class="wp-image-2141"/></figure></div>
+<div class="wp-block-image"><figure class="aligncenter"><img src="$milennial_pink_about_image_url" alt="" class="wp-image-2141"/></figure></div>
 <!-- /wp:image -->
 
 <!-- wp:atomic-blocks/ab-spacer {"spacerHeight":29} -->

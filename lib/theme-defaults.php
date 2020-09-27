@@ -1,16 +1,16 @@
 <?php
 /**
- * Visual Voyager.
+ * Milennial Pink.
  *
- * This file adds the default theme settings to the Visual Voyager Theme.
+ * This file adds the default theme settings to the Milennial Pink Theme.
  *
- * @package Visual Voyager
+ * @package Milennial Pink
  * @author  HelloTham
  * @license GPL-2.0-or-later
  * @link    https://www.hellotham.com/
  */
 
-add_filter( 'simple_social_default_styles', 'visual_voyager_social_default_styles' );
+add_filter( 'simple_social_default_styles', 'milennial_pink_social_default_styles' );
 /**
  * Set Simple Social Icon defaults.
  *
@@ -19,7 +19,7 @@ add_filter( 'simple_social_default_styles', 'visual_voyager_social_default_style
  * @param array $defaults Social style defaults.
  * @return array Modified social style defaults.
  */
-function visual_voyager_social_default_styles( $defaults ) {
+function milennial_pink_social_default_styles( $defaults ) {
 
 	$args = genesis_get_config( 'simple-social-icons-settings' );
 

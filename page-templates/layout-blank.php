@@ -1,18 +1,18 @@
 <?php
 /**
- * Visual Voyager.
+ * Milennial Pink.
  *
- * This file adds the blank page template to the Visual Voyager Theme.
+ * This file adds the blank page template to the Milennial Pink Theme.
  *
  * Template Name: Page Builder - Blank
  *
- * @package Visual Voyager
+ * @package Milennial Pink
  * @author  HelloTham
  * @license GPL-2.0-or-later
  * @link    https://www.hellotham.com/
  */
 
-add_filter( 'body_class', 'visual_voyager_blank_body_class' );
+add_filter( 'body_class', 'milennial_pink_blank_body_class' );
 
 /**
  * Add custom body class to the head.
@@ -20,19 +20,19 @@ add_filter( 'body_class', 'visual_voyager_blank_body_class' );
  * @param array $classes destination.
  * @return array
  */
-function visual_voyager_blank_body_class( $classes ) {
+function milennial_pink_blank_body_class( $classes ) {
 	$classes[] = 'template-blank';
 	return $classes;
 }
 
-add_filter( 'genesis_attr_site-inner', 'visual_voyager_attributes_site_inner' );
+add_filter( 'genesis_attr_site-inner', 'milennial_pink_attributes_site_inner' );
 /**
  * Add attributes for site-inner element.
  *
  * @param array $attributes destination.
  * @return array
  */
-function visual_voyager_attributes_site_inner( $attributes ) {
+function milennial_pink_attributes_site_inner( $attributes ) {
 	$attributes['role']     = 'main';
 	$attributes['itemprop'] = 'mainContentOfPage';
 	return $attributes;
@@ -45,7 +45,7 @@ add_filter( 'genesis_structural_wrap-site-inner', '__return_empty_string' );
 add_filter( 'genesis_site_layout', '__genesis_return_full_width_content' );
 
 // Remove site topbar.
-remove_action( 'genesis_before_header', 'visual_voyager_topbar' );
+remove_action( 'genesis_before_header', 'milennial_pink_topbar' );
 
 // Remove site header elements.
 remove_action( 'genesis_header', 'genesis_header_markup_open', 5 );
@@ -68,10 +68,10 @@ remove_action( 'genesis_footer', 'genesis_do_footer' );
 remove_action( 'genesis_footer', 'genesis_footer_markup_close', 15 );
 
 // Remove footer nav menu.
-remove_action( 'genesis_footer', 'visual_voyager_footer_menu', 12 );
+remove_action( 'genesis_footer', 'milennial_pink_footer_menu', 12 );
 
 // Remove Scroll to top link.
-remove_action( 'genesis_footer', 'visual_voyager_scrollup', 12 );
+remove_action( 'genesis_footer', 'milennial_pink_scrollup', 12 );
 
 // Display Header.
 get_header();

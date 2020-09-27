@@ -1,10 +1,10 @@
 <?php
 /**
- * Visual Voyager.
+ * Milennial Pink.
  *
- * This file adds the required helper functions used in the Visual Voyager Theme.
+ * This file adds the required helper functions used in the Milennial Pink Theme.
  *
- * @package Visual Voyager
+ * @package Milennial Pink
  * @author  HelloTham
  * @license GPL-2.0-or-later
  * @link    https://www.hellotham.com/
@@ -18,7 +18,7 @@
  * @param string $color A color in hex format.
  * @return string The hex code for the most contrasting color: dark grey or white.
  */
-function visual_voyager_color_contrast( $color ) {
+function milennial_pink_color_contrast( $color ) {
 
 	$hexcolor = str_replace( '#', '', $color );
 	$red      = hexdec( substr( $hexcolor, 0, 2 ) );
@@ -41,7 +41,7 @@ function visual_voyager_color_contrast( $color ) {
  * @param int    $change The amount to reduce or increase brightness by.
  * @return string Hex code for the adjusted color brightness.
  */
-function visual_voyager_color_brightness( $color, $change ) {
+function milennial_pink_color_brightness( $color, $change ) {
 
 	$hexcolor = str_replace( '#', '', $color );
 

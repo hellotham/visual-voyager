@@ -1,5 +1,5 @@
-# Visual Voyager Theme Changelog
-Initial version of Visual Voyager Genesis Child Theme, based on Genesis Sample
+# Milennial Pink Theme Changelog
+Initial version of Milennial Pink Genesis Child Theme, based on Genesis Sample
 
 ## [1.0.0] - 2020-09-09
 

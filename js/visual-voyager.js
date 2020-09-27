@@ -10,7 +10,7 @@ jQuery(function($){
 
 	/* Sticky Header
 	--------------------------------------------- */
-	function visual_voyager_sticky_header() {
+	function milennial_pink_sticky_header() {
 		var header = $('.site-header'),
 		body = $('body'),
 		wrap = header.find('.wrap').first(),
@@ -70,12 +70,12 @@ jQuery(function($){
 	}
 
 	//* Init sticky header
-	visual_voyager_sticky_header();
+	milennial_pink_sticky_header();
 
 
 	/* Scroll to top
 	--------------------------------------------- */
-	function visual_voyager_scroll_top() {
+	function milennial_pink_scroll_top() {
 		// Toggle scrollup icon
 		var scrollup = $('.scrollup');
 		$(window).scroll(function(){
@@ -96,6 +96,6 @@ jQuery(function($){
 	}
 
 	//* Init scroll top
-	visual_voyager_scroll_top();
+	milennial_pink_scroll_top();
 
 });

@@ -1,10 +1,10 @@
 <?php
 /**
- * Visual Voyager.
+ * Milennial Pink.
  *
- * This file adds the required WooCommerce setup functions to the Visual Voyager Theme.
+ * This file adds the required WooCommerce setup functions to the Milennial Pink Theme.
  *
- * @package Visual Voyager
+ * @package Milennial Pink
  * @author  HelloTham
  * @license GPL-2.0-or-later
  * @link    https://www.hellotham.com/
@@ -19,7 +19,7 @@ if ( class_exists( 'WooCommerce' ) ) {
 
 }
 
-add_filter( 'woocommerce_style_smallscreen_breakpoint', 'visual_voyager_woocommerce_breakpoint' );
+add_filter( 'woocommerce_style_smallscreen_breakpoint', 'milennial_pink_woocommerce_breakpoint' );
 /**
  * Modifies the WooCommerce breakpoints.
  *
@@ -27,7 +27,7 @@ add_filter( 'woocommerce_style_smallscreen_breakpoint', 'visual_voyager_woocomme
  *
  * @return string Pixel width of the theme's breakpoint.
  */
-function visual_voyager_woocommerce_breakpoint() {
+function milennial_pink_woocommerce_breakpoint() {
 
 	$current = genesis_site_layout( false );
 	$layouts = [
@@ -45,7 +45,7 @@ function visual_voyager_woocommerce_breakpoint() {
 
 }
 
-add_filter( 'genesiswooc_products_per_page', 'visual_voyager_default_products_per_page' );
+add_filter( 'genesiswooc_products_per_page', 'milennial_pink_default_products_per_page' );
 /**
  * Sets the default products per page.
  *
@@ -53,13 +53,13 @@ add_filter( 'genesiswooc_products_per_page', 'visual_voyager_default_products_pe
  *
  * @return int Number of products to show per page.
  */
-function visual_voyager_default_products_per_page() {
+function milennial_pink_default_products_per_page() {
 
 	return 8;
 
 }
 
-add_filter( 'woocommerce_pagination_args', 'visual_voyager_woocommerce_pagination' );
+add_filter( 'woocommerce_pagination_args', 'milennial_pink_woocommerce_pagination' );
 /**
  * Updates the next and previous arrows to the default Genesis style.
  *
@@ -68,22 +68,22 @@ add_filter( 'woocommerce_pagination_args', 'visual_voyager_woocommerce_paginatio
  *
  * @return array New next and previous text arguments.
  */
-function visual_voyager_woocommerce_pagination( $args ) {
+function milennial_pink_woocommerce_pagination( $args ) {
 
-	$args['prev_text'] = sprintf( '&laquo; %s', __( 'Previous Page', 'visual-voyager' ) );
-	$args['next_text'] = sprintf( '%s &raquo;', __( 'Next Page', 'visual-voyager' ) );
+	$args['prev_text'] = sprintf( '&laquo; %s', __( 'Previous Page', 'milennial-pink' ) );
+	$args['next_text'] = sprintf( '%s &raquo;', __( 'Next Page', 'milennial-pink' ) );
 
 	return $args;
 
 }
 
-add_action( 'after_switch_theme', 'visual_voyager_woocommerce_image_dimensions_after_theme_setup', 1 );
+add_action( 'after_switch_theme', 'milennial_pink_woocommerce_image_dimensions_after_theme_setup', 1 );
 /**
  * Defines WooCommerce image sizes on theme activation.
  *
  * @since 2.3.0
  */
-function visual_voyager_woocommerce_image_dimensions_after_theme_setup() {
+function milennial_pink_woocommerce_image_dimensions_after_theme_setup() {
 
 	global $pagenow;
 
@@ -92,11 +92,11 @@ function visual_voyager_woocommerce_image_dimensions_after_theme_setup() {
 		return;
 	}
 
-	visual_voyager_update_woocommerce_image_dimensions();
+	milennial_pink_update_woocommerce_image_dimensions();
 
 }
 
-add_action( 'activated_plugin', 'visual_voyager_woocommerce_image_dimensions_after_woo_activation', 10, 2 );
+add_action( 'activated_plugin', 'milennial_pink_woocommerce_image_dimensions_after_woo_activation', 10, 2 );
 /**
  * Defines the WooCommerce image sizes on WooCommerce activation.
  *
@@ -104,14 +104,14 @@ add_action( 'activated_plugin', 'visual_voyager_woocommerce_image_dimensions_aft
  *
  * @param string $plugin The path of the plugin being activated.
  */
-function visual_voyager_woocommerce_image_dimensions_after_woo_activation( $plugin ) {
+function milennial_pink_woocommerce_image_dimensions_after_woo_activation( $plugin ) {
 
 	// Checks to see if WooCommerce is being activated.
 	if ( 'woocommerce/woocommerce.php' !== $plugin ) {
 		return;
 	}
 
-	visual_voyager_update_woocommerce_image_dimensions();
+	milennial_pink_update_woocommerce_image_dimensions();
 
 }
 
@@ -120,7 +120,7 @@ function visual_voyager_woocommerce_image_dimensions_after_woo_activation( $plug
  *
  * @since 2.3.0
  */
-function visual_voyager_update_woocommerce_image_dimensions() {
+function milennial_pink_update_woocommerce_image_dimensions() {
 
 	// Updates image size options.
 	update_option( 'woocommerce_single_image_width', 655 );    // Single product image.
@@ -131,7 +131,7 @@ function visual_voyager_update_woocommerce_image_dimensions() {
 
 }
 
-add_filter( 'woocommerce_get_image_size_gallery_thumbnail', 'visual_voyager_gallery_image_thumbnail' );
+add_filter( 'woocommerce_get_image_size_gallery_thumbnail', 'milennial_pink_gallery_image_thumbnail' );
 /**
  * Filters the WooCommerce gallery image dimensions.
  *
@@ -140,7 +140,7 @@ add_filter( 'woocommerce_get_image_size_gallery_thumbnail', 'visual_voyager_gall
  * @param array $size The gallery image size and crop arguments.
  * @return array The modified gallery image size and crop arguments.
  */
-function visual_voyager_gallery_image_thumbnail( $size ) {
+function milennial_pink_gallery_image_thumbnail( $size ) {
 
 	$size = [
 		'width'  => 180,

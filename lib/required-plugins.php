@@ -1,10 +1,10 @@
 <?php
 /**
- * Visual Voyager.
+ * Milennial Pink.
  *
- * This file adds the default theme settings to the Visual Voyager Theme.
+ * This file adds the default theme settings to the Milennial Pink Theme.
  *
- * @package Visual Voyager
+ * @package Milennial Pink
  * @author  HelloTham
  * @license GPL-2.0-or-later
  * @link    https://www.hellotham.com/
@@ -16,11 +16,11 @@
 require_once get_stylesheet_directory() . '/lib/class-plugin-activation.php';
 
 
-add_action( 'tgmpa_register', 'visual_voyager_register_required_plugins' );
+add_action( 'tgmpa_register', 'milennial_pink_register_required_plugins' );
 /**
  * Register the required plugins for this theme.
  */
-function visual_voyager_register_required_plugins() {
+function milennial_pink_register_required_plugins() {
 	/*
 	 * Array of plugin arrays. Required keys are name and slug.
 	 */
@@ -45,7 +45,7 @@ function visual_voyager_register_required_plugins() {
 	 *
 	 */
 	$config = [
-		'id'           => 'visual-voyager',           // Unique ID for hashing notices for multiple instances of TGMPA.
+		'id'           => 'milennial-pink',           // Unique ID for hashing notices for multiple instances of TGMPA.
 		'default_path' => '',                      // Default absolute path to bundled plugins.
 		'menu'         => 'tgmpa-install-plugins', // Menu slug.
 		'parent_slug'  => 'themes.php',            // Parent menu slug.

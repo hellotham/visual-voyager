@@ -1,10 +1,10 @@
 <?php
 /**
- * Visual Voyager.
+ * Milennial Pink.
  *
- * This file adds functions to the Visual Voyager Theme.
+ * This file adds functions to the Milennial Pink Theme.
  *
- * @package Visual Voyager
+ * @package Milennial Pink
  * @author  HelloTham
  * @license GPL-2.0-or-later
  * @link    https://www.hellotham.com/
@@ -16,17 +16,17 @@ require_once get_template_directory() . '/lib/init.php';
 // Sets up the Theme.
 require_once get_stylesheet_directory() . '/lib/theme-defaults.php';
 
-define( 'CHILD_THEME_NAME', 'Visual Voyager' );
+define( 'CHILD_THEME_NAME', 'Milennial Pink' );
 define( 'CHILD_THEME_URL', 'https://visualvoyager.net/' );
 define( 'CHILD_THEME_VERSION', '1.0.0' );
 
-add_action( 'after_setup_theme', 'visual_voyager_localization_setup' );
+add_action( 'after_setup_theme', 'milennial_pink_localization_setup' );
 /**
  * Sets localization (do not remove).
  *
  * @since 1.0.0
  */
-function visual_voyager_localization_setup() {
+function milennial_pink_localization_setup() {
 
 	load_child_theme_textdomain( genesis_get_theme_handle(), get_stylesheet_directory() . '/languages' );
 
@@ -68,13 +68,13 @@ if ( function_exists( 'genesis_register_responsive_menus' ) ) {
 	genesis_register_responsive_menus( genesis_get_config( 'responsive-menus' ) );
 }
 
-add_action( 'wp_enqueue_scripts', 'visual_voyager_enqueue_scripts_styles' );
+add_action( 'wp_enqueue_scripts', 'milennial_pink_enqueue_scripts_styles' );
 /**
  * Enqueues scripts and styles.
  *
  * @since 1.0.0
  */
-function visual_voyager_enqueue_scripts_styles() {
+function milennial_pink_enqueue_scripts_styles() {
 
 	$appearance = genesis_get_config( 'appearance' );
 
@@ -86,14 +86,14 @@ function visual_voyager_enqueue_scripts_styles() {
 	);
 
 	wp_enqueue_style( 'dashicons' );
-	wp_enqueue_style( 'visual-voyager-font-lato', '//fonts.googleapis.com/css?family=Lato:300,400,700', [], genesis_get_theme_version() );
-	wp_enqueue_style( 'visual-voyager-font-awesome', '//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', [], '4.7.0' );
-	wp_enqueue_style( 'visual-voyager-line-awesome', '//maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css', [], '1.1' );
-	wp_enqueue_script( 'visual-voyager-match-height', get_stylesheet_directory_uri() . '/js/match-height.js', [ 'jquery' ], '0.5.2', true );
+	wp_enqueue_style( 'milennial-pink-font-lato', '//fonts.googleapis.com/css?family=Lato:300,400,700', [], genesis_get_theme_version() );
+	wp_enqueue_style( 'milennial-pink-font-awesome', '//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', [], '4.7.0' );
+	wp_enqueue_style( 'milennial-pink-line-awesome', '//maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css', [], '1.1' );
+	wp_enqueue_script( 'milennial-pink-match-height', get_stylesheet_directory_uri() . '/js/match-height.js', [ 'jquery' ], '0.5.2', true );
 	wp_enqueue_script(
-		'visual-voyager-js',
-		get_stylesheet_directory_uri() . '/js/visual-voyager.js',
-		[ 'jquery', 'visual-voyager-match-height' ],
+		'milennial-pink-js',
+		get_stylesheet_directory_uri() . '/js/milennial-pink.js',
+		[ 'jquery', 'milennial-pink-match-height' ],
 		genesis_get_theme_version(),
 		true
 	);
@@ -109,21 +109,21 @@ function visual_voyager_enqueue_scripts_styles() {
 
 }
 
-add_action( 'wp_enqueue_scripts', 'visual_voyager_rtl_styles', 12 );
+add_action( 'wp_enqueue_scripts', 'milennial_pink_rtl_styles', 12 );
 /**
  * Enqueue RTL Styles.
  */
-function visual_voyager_rtl_styles() {
+function milennial_pink_rtl_styles() {
 	// Load RTL stylesheet.
 	if ( ! is_rtl() ) {
 		return;
 	}
 
-	wp_enqueue_style( 'visual-voyager-rtl', get_stylesheet_directory_uri() . '/rtl/style-rtl.css', [], genesis_get_theme_version() );
+	wp_enqueue_style( 'milennial-pink-rtl', get_stylesheet_directory_uri() . '/rtl/style-rtl.css', [], genesis_get_theme_version() );
 
 }
 
-add_action( 'after_setup_theme', 'visual_voyager_theme_support', 9 );
+add_action( 'after_setup_theme', 'milennial_pink_theme_support', 9 );
 /**
  * Add desired theme supports.
  *
@@ -131,7 +131,7 @@ add_action( 'after_setup_theme', 'visual_voyager_theme_support', 9 );
  *
  * @since 3.0.0
  */
-function visual_voyager_theme_support() {
+function milennial_pink_theme_support() {
 
 	$theme_supports = genesis_get_config( 'theme-supports' );
 
@@ -141,7 +141,7 @@ function visual_voyager_theme_support() {
 
 }
 
-add_action( 'after_setup_theme', 'visual_voyager_post_type_support', 9 );
+add_action( 'after_setup_theme', 'milennial_pink_post_type_support', 9 );
 /**
  * Add desired post type supports.
  *
@@ -149,7 +149,7 @@ add_action( 'after_setup_theme', 'visual_voyager_post_type_support', 9 );
  *
  * @since 3.0.0
  */
-function visual_voyager_post_type_support() {
+function milennial_pink_post_type_support() {
 
 	$post_type_supports = genesis_get_config( 'post-type-supports' );
 
@@ -159,13 +159,13 @@ function visual_voyager_post_type_support() {
 
 }
 
-add_action( 'genesis_site_title', 'visual_voyager_custom_logo', 0 );
+add_action( 'genesis_site_title', 'milennial_pink_custom_logo', 0 );
 /**
  * Display the custom logo.
  *
  * @since 1.1.0
  */
-function visual_voyager_custom_logo() {
+function milennial_pink_custom_logo() {
 	if ( function_exists( 'the_custom_logo' ) ) {
 		the_custom_logo();
 	}
@@ -199,16 +199,16 @@ add_post_type_support( 'portfolio', 'genesis-layouts' );
 genesis_register_sidebar(
 	[
 		'id'          => 'topbar',
-		'name'        => __( 'Topbar', 'visual-voyager' ),
-		'description' => __( 'This is the topbar section.', 'visual-voyager' ),
+		'name'        => __( 'Topbar', 'milennial-pink' ),
+		'description' => __( 'This is the topbar section.', 'milennial-pink' ),
 	]
 );
 
-add_action( 'genesis_before_header', 'visual_voyager_topbar' );
+add_action( 'genesis_before_header', 'milennial_pink_topbar' );
 /**
  * Topbar with contact info and social links.
  */
-function visual_voyager_topbar() {
+function milennial_pink_topbar() {
 	genesis_widget_area(
 		'topbar',
 		[
@@ -218,15 +218,15 @@ function visual_voyager_topbar() {
 	);
 }
 
-add_filter( 'body_class', 'visual_voyager_sticky_header_class' );
+add_filter( 'body_class', 'milennial_pink_sticky_header_class' );
 /**
  * Sticky Header.
  *
  * @param array $classes destination.
  * @return array
  */
-function visual_voyager_sticky_header_class( $classes ) {
-	$sticky_header = get_option( 'visual_voyager_sticky_header' );
+function milennial_pink_sticky_header_class( $classes ) {
+	$sticky_header = get_option( 'milennial_pink_sticky_header' );
 	$classes[]     = ( 'disable' !== $sticky_header ) ? 'sticky-header-active' : '';
 	return $classes;
 }
@@ -235,11 +235,11 @@ function visual_voyager_sticky_header_class( $classes ) {
 remove_action( 'genesis_after_header', 'genesis_do_nav' );
 add_action( 'genesis_header', 'genesis_do_nav', 12 );
 
-add_action( 'genesis_footer', 'visual_voyager_footer_menu', 12 );
+add_action( 'genesis_footer', 'milennial_pink_footer_menu', 12 );
 /**
  * Hook menu in footer.
  */
-function visual_voyager_footer_menu() {
+function milennial_pink_footer_menu() {
 	printf( '<nav %s>', genesis_attr( 'nav-footer' ) );
 	wp_nav_menu(
 		[
@@ -253,50 +253,50 @@ function visual_voyager_footer_menu() {
 	echo '</nav>';
 }
 
-add_filter( 'genesis_attr_nav-footer', 'visual_voyager_footer_nav_attr' );
+add_filter( 'genesis_attr_nav-footer', 'milennial_pink_footer_nav_attr' );
 /**
  * Nav footer attributes.
  *
  * @param array $attributes destination.
  * @return array
  */
-function visual_voyager_footer_nav_attr( $attributes ) {
+function milennial_pink_footer_nav_attr( $attributes ) {
 	$attributes['itemscope'] = true;
 	$attributes['itemtype']  = 'http://schema.org/SiteNavigationElement';
 	return $attributes;
 }
 
-add_filter( 'genesis_attr_nav-footer', 'visual_voyager_nav_footer_id' );
+add_filter( 'genesis_attr_nav-footer', 'milennial_pink_nav_footer_id' );
 /**
  * Add skip link needs to footer nav.
  *
  * @param array $attributes destination.
  * @return array
  */
-function visual_voyager_nav_footer_id( $attributes ) {
+function milennial_pink_nav_footer_id( $attributes ) {
 	$attributes['id'] = 'genesis-nav-footer';
 	return $attributes;
 }
 
-add_filter( 'genesis_skip_links_output', 'visual_voyager_nav_footer_skip_link' );
+add_filter( 'genesis_skip_links_output', 'milennial_pink_nav_footer_skip_link' );
 /**
  * Add skip link needs to footer nav.
  *
  * @param array $links destination.
  * @return array
  */
-function visual_voyager_nav_footer_skip_link( $links ) {
+function milennial_pink_nav_footer_skip_link( $links ) {
 	if ( has_nav_menu( 'footer' ) ) {
-		$links['genesis-nav-footer'] = __( 'Skip to footer navigation', 'visual-voyager' );
+		$links['genesis-nav-footer'] = __( 'Skip to footer navigation', 'milennial-pink' );
 	}
 	return $links;
 }
 
-add_action( 'genesis_footer', 'visual_voyager_scrollup', 12 );
+add_action( 'genesis_footer', 'milennial_pink_scrollup', 12 );
 /**
  * Scroll to top link.
  */
-function visual_voyager_scrollup() {
+function milennial_pink_scrollup() {
 	echo '<div class="scroll-up">';
 	echo '<a href="#" class="scrollup"></a>';
 	echo '</div>';
@@ -310,7 +310,7 @@ function visual_voyager_scrollup() {
  * @param array $args Original menu options.
  * @return array Menu options with depth set to 1.
  */
-function visual_voyager_secondary_menu_args( $args ) {
+function milennial_pink_secondary_menu_args( $args ) {
 
 	if ( 'secondary' === $args['theme_location'] ) {
 		$args['depth'] = 1;
@@ -320,7 +320,7 @@ function visual_voyager_secondary_menu_args( $args ) {
 
 }
 
-add_filter( 'genesis_author_box_gravatar_size', 'visual_voyager_author_box_gravatar' );
+add_filter( 'genesis_author_box_gravatar_size', 'milennial_pink_author_box_gravatar' );
 /**
  * Modifies size of the Gravatar in the author box.
  *
@@ -329,13 +329,13 @@ add_filter( 'genesis_author_box_gravatar_size', 'visual_voyager_author_box_grava
  * @param int $size Original icon size.
  * @return int Modified icon size.
  */
-function visual_voyager_author_box_gravatar( $size ) {
+function milennial_pink_author_box_gravatar( $size ) {
 
 	return 90;
 
 }
 
-add_filter( 'genesis_comment_list_args', 'visual_voyager_comments_gravatar' );
+add_filter( 'genesis_comment_list_args', 'milennial_pink_comments_gravatar' );
 /**
  * Modifies size of the Gravatar in the entry comments.
  *
@@ -344,7 +344,7 @@ add_filter( 'genesis_comment_list_args', 'visual_voyager_comments_gravatar' );
  * @param array $args Gravatar settings.
  * @return array Gravatar settings with modified size.
  */
-function visual_voyager_comments_gravatar( $args ) {
+function milennial_pink_comments_gravatar( $args ) {
 
 	$args['avatar_size'] = 60;
 	return $args;
@@ -352,7 +352,7 @@ function visual_voyager_comments_gravatar( $args ) {
 }
 
 /** Force full width layout on all archive pages*/
-add_filter( 'genesis_pre_get_option_site_layout', 'visual_voyager_full_width_layout_archives' );
+add_filter( 'genesis_pre_get_option_site_layout', 'milennial_pink_full_width_layout_archives' );
 
 /**
  * Change archives to use full width layout.
@@ -363,7 +363,7 @@ add_filter( 'genesis_pre_get_option_site_layout', 'visual_voyager_full_width_lay
  * @param string $opt destination.
  * @return string
  */
-function visual_voyager_full_width_layout_archives( $opt ) {
+function milennial_pink_full_width_layout_archives( $opt ) {
 
 	if ( is_archive() ) {
 

@@ -1,24 +1,24 @@
 <?php
 /**
- * Visual Voyager.
+ * Milennial Pink.
  *
  * Homepage content optionally installed after theme activation.
  *
- * @package Visual Voyager
+ * @package Milennial Pink
  * @author  HelloTham
  * @license GPL-2.0-or-later
  * @link    https://www.hellotham.com/
  */
 
 // Photo by Rohit Tandon on Unsplash: https://unsplash.com/photos/9wg5jCEPBsw.
-$visual_voyager_homepage_header_image_url = CHILD_URL . '/config/import/images/mountain-bw.jpg';
+$milennial_pink_homepage_header_image_url = CHILD_URL . '/config/import/images/mountain-bw.jpg';
 
 // Photo by Haley Powers on Unsplash: https://unsplash.com/photos/rjhvXX7JBPc.
-$visual_voyager_homepage_faq_image_url = CHILD_URL . '/config/import/images/home-about.jpg';
+$milennial_pink_homepage_faq_image_url = CHILD_URL . '/config/import/images/home-about.jpg';
 
 return <<<CONTENT
 <!-- wp:media-text {"align":"full","mediaId":1477,"mediaType":"image","isStackedOnMobile":true} -->
-<div class="wp-block-media-text alignfull is-stacked-on-mobile"><figure class="wp-block-media-text__media"><img src="$visual_voyager_homepage_header_image_url" alt="" class="wp-image-1477"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":1} -->
+<div class="wp-block-media-text alignfull is-stacked-on-mobile"><figure class="wp-block-media-text__media"><img src="$milennial_pink_homepage_header_image_url" alt="" class="wp-image-1477"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":1} -->
 <h1>We'll teach you how to build and grow an online business.</h1>
 <!-- /wp:heading -->
 
@@ -118,7 +118,7 @@ return <<<CONTENT
 
 <!-- wp:atomic-blocks/ab-column -->
 <div class="wp-block-atomic-blocks-ab-column ab-block-layout-column"><div class="ab-block-layout-column-inner"><!-- wp:image {"id":308} -->
-<figure class="wp-block-image"><img src="$visual_voyager_homepage_faq_image_url" alt="" class="wp-image-308"/><figcaption>Photo by&nbsp;<a href="https://unsplash.com/photos/rjhvXX7JBPc">Haley Powers</a>&nbsp;on&nbsp;<a href="https://unsplash.com/">Unsplash</a></figcaption></figure>
+<figure class="wp-block-image"><img src="$milennial_pink_homepage_faq_image_url" alt="" class="wp-image-308"/><figcaption>Photo by&nbsp;<a href="https://unsplash.com/photos/rjhvXX7JBPc">Haley Powers</a>&nbsp;on&nbsp;<a href="https://unsplash.com/">Unsplash</a></figcaption></figure>
 <!-- /wp:image --></div></div>
 <!-- /wp:atomic-blocks/ab-column --></div></div>
 <!-- /wp:atomic-blocks/ab-columns -->

@@ -1,11 +1,11 @@
 <?php
 /**
- * Visual Voyager child theme.
+ * Milennial Pink child theme.
  *
- * @package Visual Voyager
+ * @package Milennial Pink
  * @author  HelloTham
  * @license GPL-2.0-or-later
- * @link    https://my.studiopress.com/themes/visual-voyager/
+ * @link    https://my.studiopress.com/themes/milennial-pink/
  */
 
 /**
@@ -14,8 +14,8 @@
 return [
 	'script' => [
 		'menuClasses' => [
-			'mainMenu' => __( 'Menu', 'visual-voyager' ),
-			'subMenu'  => __( 'Menu', 'visual-voyager' ),
+			'mainMenu' => __( 'Menu', 'milennial-pink' ),
+			'subMenu'  => __( 'Menu', 'milennial-pink' ),
 			'others'   => [
 				'.nav-primary',
 				'.nav-secondary',

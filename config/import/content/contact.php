@@ -1,13 +1,13 @@
 <?php
 /**
- * Visual Voyager.
+ * Milennial Pink.
  *
  * Contact page content optionally installed after theme activation.
  * Will create a form with WPForms and embed on the page as a WPForms block.
  *
  * Visit `/wp-admin/admin.php?page=genesis-getting-started` to trigger import.
  *
- * @package Visual Voyager
+ * @package Milennial Pink
  * @author  HelloTham
  * @license GPL-2.0-or-later
  * @link    https://www.hellotham.com/

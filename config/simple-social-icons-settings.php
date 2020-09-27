@@ -1,8 +1,8 @@
 <?php
 /**
- * Visual Voyager Simple Social Icons default settings.
+ * Milennial Pink Simple Social Icons default settings.
  *
- * @package Visual Voyager
+ * @package Milennial Pink
  * @author  HelloTham
  * @license GPL-2.0-or-later
  * @link    https://www.hellotham.com/

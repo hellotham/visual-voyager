@@ -1,13 +1,13 @@
 <?php
 /**
- * Visual Voyager.
+ * Milennial Pink.
  *
  * Onboarding config shared between Starter Packs.
  *
  * Genesis Starter Packs give you a choice of content variation when activating
  * the theme. The content below is common to all packs for this theme.
  *
- * @package Visual Voyager
+ * @package Milennial Pink
  * @author  HelloTham
  * @license GPL-2.0-or-later
  * @link    https://www.hellotham.com/
@@ -16,22 +16,22 @@
 return [
 	'plugins'          => [
 		[
-			'name'       => __( 'Atomic Blocks', 'visual-voyager' ),
+			'name'       => __( 'Atomic Blocks', 'milennial-pink' ),
 			'slug'       => 'atomic-blocks/atomicblocks.php',
 			'public_url' => 'https://atomicblocks.com/',
 		],
 		[
-			'name'       => __( 'Simple Social Icons', 'visual-voyager' ),
+			'name'       => __( 'Simple Social Icons', 'milennial-pink' ),
 			'slug'       => 'simple-social-icons/simple-social-icons.php',
 			'public_url' => 'https://wordpress.org/plugins/simple-social-icons/',
 		],
 		[
-			'name'       => __( 'Genesis eNews Extended (Third Party)', 'visual-voyager' ),
+			'name'       => __( 'Genesis eNews Extended (Third Party)', 'milennial-pink' ),
 			'slug'       => 'genesis-enews-extended/plugin.php',
 			'public_url' => 'https://wordpress.org/plugins/genesis-enews-extended/',
 		],
 		[
-			'name'       => __( 'WPForms Lite (Third Party)', 'visual-voyager' ),
+			'name'       => __( 'WPForms Lite (Third Party)', 'milennial-pink' ),
 			'slug'       => 'wpforms-lite/wpforms.php',
 			'public_url' => 'https://wordpress.org/plugins/wpforms-lite/',
 		],

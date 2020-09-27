@@ -2,19 +2,19 @@
 /**
  * Gutenberg theme support.
  *
- * @package Visual Voyager
+ * @package Milennial Pink
  * @author  HelloTham
  * @license GPL-2.0-or-later
  * @link    https://www.hellotham.com/
  */
 
-add_action( 'wp_enqueue_scripts', 'visual_voyager_enqueue_gutenberg_frontend_styles' );
+add_action( 'wp_enqueue_scripts', 'milennial_pink_enqueue_gutenberg_frontend_styles' );
 /**
  * Enqueues Gutenberg front-end styles.
  *
  * @since 2.7.0
  */
-function visual_voyager_enqueue_gutenberg_frontend_styles() {
+function milennial_pink_enqueue_gutenberg_frontend_styles() {
 
 	wp_enqueue_style(
 		genesis_get_theme_handle() . '-gutenberg',
@@ -25,13 +25,13 @@ function visual_voyager_enqueue_gutenberg_frontend_styles() {
 
 }
 
-add_action( 'enqueue_block_editor_assets', 'visual_voyager_block_editor_styles' );
+add_action( 'enqueue_block_editor_assets', 'milennial_pink_block_editor_styles' );
 /**
  * Enqueues Gutenberg admin editor fonts and styles.
  *
  * @since 2.7.0
  */
-function visual_voyager_block_editor_styles() {
+function milennial_pink_block_editor_styles() {
 
 	$appearance = genesis_get_config( 'appearance' );
 
@@ -44,7 +44,7 @@ function visual_voyager_block_editor_styles() {
 
 }
 
-add_filter( 'body_class', 'visual_voyager_blocks_body_classes' );
+add_filter( 'body_class', 'milennial_pink_blocks_body_classes' );
 /**
  * Adds body classes to help with block styling.
  *
@@ -57,7 +57,7 @@ add_filter( 'body_class', 'visual_voyager_blocks_body_classes' );
  * @param array $classes The original classes.
  * @return array The modified classes.
  */
-function visual_voyager_blocks_body_classes( $classes ) {
+function milennial_pink_blocks_body_classes( $classes ) {
 
 	if ( ! is_singular() || ! function_exists( 'has_blocks' ) || ! function_exists( 'parse_blocks' ) ) {
 		return $classes;
@@ -101,31 +101,31 @@ add_theme_support( 'custom-line-height' );
 // Add support for custom units.
 add_theme_support( 'custom-units' );
 
-$visual_voyager_appearance = genesis_get_config( 'appearance' );
+$milennial_pink_appearance = genesis_get_config( 'appearance' );
 
 // Adds support for editor font sizes.
 add_theme_support(
 	'editor-font-sizes',
-	$visual_voyager_appearance['editor-font-sizes']
+	$milennial_pink_appearance['editor-font-sizes']
 );
 
 // Adds support for editor color palette.
 add_theme_support(
 	'editor-color-palette',
-	$visual_voyager_appearance['editor-color-palette']
+	$milennial_pink_appearance['editor-color-palette']
 );
 
 require_once get_stylesheet_directory() . '/lib/gutenberg/inline-styles.php';
 
-add_action( 'after_setup_theme', 'visual_voyager_content_width', 0 );
+add_action( 'after_setup_theme', 'milennial_pink_content_width', 0 );
 /**
  * Set content width to match the “wide” Gutenberg block width.
  */
-function visual_voyager_content_width() {
+function milennial_pink_content_width() {
 
 	$appearance = genesis_get_config( 'appearance' );
 
 	// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound -- See https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/924
-	$GLOBALS['content_width'] = apply_filters( 'visual_voyager_content_width', $appearance['content-width'] );
+	$GLOBALS['content_width'] = apply_filters( 'milennial_pink_content_width', $appearance['content-width'] );
 
 }

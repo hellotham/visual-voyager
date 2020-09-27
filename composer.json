@@ -1,8 +1,8 @@
 {
-	"name": "hellotham/visual-voyager",
+	"name": "hellotham/milennial-pink",
 	"type": "wordpress-theme",
-	"description": "Visual Voyager child theme for the Genesis Framework",
-	"homepage": "https://github.com/hellotham/visual-voyager",
+	"description": "Milennial Pink child theme for the Genesis Framework",
+	"homepage": "https://github.com/hellotham/milennial-pink",
 	"license": "GPL-2.0-or-later",
 	"authors": [
 		{
@@ -31,6 +31,6 @@
 	},
 	"support": {
 		"issues": "https://github.com/hellotham/visual-voyager/issues",
-		"source": "https://github.com/hellotham/visual-voyager"
+		"source": "https://github.com/hellotham/milennial-pink"
 	}
 }

@@ -2,7 +2,7 @@
 # This file is distributed under the GPL-2.0-or-later.=!>
 msgid ""
 msgstr ""
-"Project-Id-Version: Visual Voyager 1.0.0\n"
+"Project-Id-Version: Milennial Pink 1.0.0\n"
 "Report-Msgid-Bugs-To: StudioPress <translations@studiopress.com>\n"
 "POT-Creation-Date: 2020-09-10 00:42:15+00:00\n"
 "MIME-Version: 1.0\n"
@@ -158,7 +158,7 @@ msgid "Simple Contact Form"
 msgstr ""
 
 #. Theme Name of the plugin/theme
-msgid "Visual Voyager"
+msgid "Milennial Pink"
 msgstr ""
 
 #. Theme URI of the plugin/theme
@@ -166,7 +166,7 @@ msgid "https://visualvoyager.net"
 msgstr ""
 
 #. Description of the plugin/theme
-msgid "Visual Voyager WordPress Genesis Child theme, based on Genesis Sample."
+msgid "Milennial Pink WordPress Genesis Child theme, based on Genesis Sample."
 msgstr ""
 
 #. Author of the plugin/theme

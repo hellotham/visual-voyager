@@ -1,10 +1,10 @@
 <?php
 /**
- * Visual Voyager.
+ * Milennial Pink.
  *
- * This file adds the category template to the Visual Voyager Theme.
+ * This file adds the category template to the Milennial Pink Theme.
  *
- * @package Visual Voyager
+ * @package Milennial Pink
  * @author  HelloTham
  * @license GPL-2.0-or-later
  * @link    https://www.hellotham.com/
@@ -29,7 +29,7 @@ remove_action( 'genesis_entry_footer', 'genesis_post_meta' );
 /**
  * Add Image and Title.
  */
-function visual_voyager_category_grid_content() {
+function milennial_pink_category_grid_content() {
 	$img = genesis_get_image(
 		[
 			'format'  => 'html',
@@ -47,20 +47,20 @@ function visual_voyager_category_grid_content() {
 		);
 	}
 }
-add_action( 'genesis_entry_header', 'visual_voyager_category_grid_content' );
+add_action( 'genesis_entry_header', 'milennial_pink_category_grid_content' );
 add_action( 'genesis_entry_header', 'genesis_do_post_title' );
 
-global $visual_voyager_category_count;
+global $milennial_pink_category_count;
 
 /**
  * Add Post Class
  *
  * @param array $classes classes.
  */
-function visual_voyager_category_post_class( $classes ) {
-	global $visual_voyager_category_count;
-	$visual_voyager_category_count++;
-	if ( 0 === $visual_voyager_category_count % 2 ) {
+function milennial_pink_category_post_class( $classes ) {
+	global $milennial_pink_category_count;
+	$milennial_pink_category_count++;
+	if ( 0 === $milennial_pink_category_count % 2 ) {
 		$classes[] = 'one-half';
 	} else {
 		$classes[] = 'one-half first';
@@ -70,6 +70,6 @@ function visual_voyager_category_post_class( $classes ) {
 
 	return $classes;
 }
-add_action( 'post_class', 'visual_voyager_category_post_class' );
+add_action( 'post_class', 'milennial_pink_category_post_class' );
 
 genesis();

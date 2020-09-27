@@ -1,10 +1,10 @@
 <?php
 /**
- * Visual Voyager.
+ * Milennial Pink.
  *
- * This file adds the archive-portfolio template to the Visual Voyager Theme.
+ * This file adds the archive-portfolio template to the Milennial Pink Theme.
  *
- * @package Visual Voyager
+ * @package Milennial Pink
  * @author  HelloTham
  * @license GPL-2.0-or-later
  * @link    https://www.hellotham.com/
@@ -15,7 +15,7 @@
  *
  * @param array $classes classes.
  */
-function visual_voyager_portfolio_post_class( $classes ) {
+function milennial_pink_portfolio_post_class( $classes ) {
 
 	global $wp_query;
 	if ( ! $wp_query->is_main_query() ) {
@@ -32,7 +32,7 @@ function visual_voyager_portfolio_post_class( $classes ) {
 
 	return $classes;
 }
-add_filter( 'post_class', 'visual_voyager_portfolio_post_class' );
+add_filter( 'post_class', 'milennial_pink_portfolio_post_class' );
 
 // Remove items from loop.
 remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
@@ -44,10 +44,10 @@ remove_action( 'genesis_entry_footer', 'genesis_entry_footer_markup_close', 15 )
 /**
  * Add Portfolio Image.
  */
-function visual_voyager_portfolio_image() {
+function milennial_pink_portfolio_image() {
 	echo esc_html( wpautop( '<a href="' . get_permalink() . '">' . genesis_get_image( [ 'size' => 'medium' ] ) . '</a>' ) );
 }
-add_action( 'genesis_entry_content', 'visual_voyager_portfolio_image' );
+add_action( 'genesis_entry_content', 'milennial_pink_portfolio_image' );
 add_filter( 'genesis_pre_get_option_content_archive_thumbnail', '__return_false' );
 
 // Move Title below Image.

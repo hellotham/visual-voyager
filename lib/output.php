@@ -1,33 +1,33 @@
 <?php
 /**
- * Visual Voyager.
+ * Milennial Pink.
  *
- * This file adds the required CSS to the front end to the Visual Voyager Theme.
+ * This file adds the required CSS to the front end to the Milennial Pink Theme.
  *
- * @package Visual Voyager
+ * @package Milennial Pink
  * @author  HelloTham
  * @license GPL-2.0-or-later
  * @link    https://www.hellotham.com/
  */
 
-add_action( 'wp_enqueue_scripts', 'visual_voyager_css' );
+add_action( 'wp_enqueue_scripts', 'milennial_pink_css' );
 /**
  * Checks the settings for the link color, and accent color.
  * If any of these value are set the appropriate CSS is output.
  *
  * @since 2.2.3
  */
-function visual_voyager_css() {
+function milennial_pink_css() {
 
 	$appearance = genesis_get_config( 'appearance' );
 
-	$color_link   = get_theme_mod( 'visual_voyager_link_color', $appearance['default-colors']['link'] );
-	$color_accent = get_theme_mod( 'visual_voyager_accent_color', $appearance['default-colors']['accent'] );
+	$color_link   = get_theme_mod( 'milennial_pink_link_color', $appearance['default-colors']['link'] );
+	$color_accent = get_theme_mod( 'milennial_pink_accent_color', $appearance['default-colors']['accent'] );
 	$logo         = wp_get_attachment_image_src( get_theme_mod( 'custom_logo' ), 'full' );
 
 	if ( $logo ) {
 		$logo_height           = absint( $logo[2] );
-		$logo_max_width        = get_theme_mod( 'visual_voyager_logo_width', 350 );
+		$logo_max_width        = get_theme_mod( 'milennial_pink_logo_width', 350 );
 		$logo_width            = absint( $logo[1] );
 		$logo_ratio            = $logo_width / max( $logo_height, 1 );
 		$logo_effective_height = min( $logo_width, $logo_max_width ) / max( $logo_ratio, 1 );
@@ -93,7 +93,7 @@ function visual_voyager_css() {
 		}
 		',
 		$color_accent,
-		visual_voyager_color_contrast( $color_accent )
+		milennial_pink_color_contrast( $color_accent )
 	) : '';
 
 	// Add theme accent color.

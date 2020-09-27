@@ -1,25 +1,25 @@
 <?php
 /**
- * Visual Voyager.
+ * Milennial Pink.
  *
- * This file adds the full width page template to the Visual Voyager Theme.
+ * This file adds the full width page template to the Milennial Pink Theme.
  *
  * Template Name: Page Builder - Full Width
  *
- * @package Visual Voyager
+ * @package Milennial Pink
  * @author  HelloTham
  * @license GPL-2.0-or-later
  * @link    https://www.hellotham.com/
  */
 
-add_filter( 'body_class', 'visual_voyager_full_width_body_class' );
+add_filter( 'body_class', 'milennial_pink_full_width_body_class' );
 /**
  * Add landing page body class to the head.
  *
  * @param array $classes destination.
  * @return array
  */
-function visual_voyager_full_width_body_class( $classes ) {
+function milennial_pink_full_width_body_class( $classes ) {
 
 	$classes[] = 'template-full-width';
 
@@ -27,14 +27,14 @@ function visual_voyager_full_width_body_class( $classes ) {
 
 }
 
-add_filter( 'genesis_attr_site-inner', 'visual_voyager_attributes_site_inner' );
+add_filter( 'genesis_attr_site-inner', 'milennial_pink_attributes_site_inner' );
 /**
  * Add attributes for site-inner element.
  *
  * @param array $attributes destination.
  * @return array
  */
-function visual_voyager_attributes_site_inner( $attributes ) {
+function milennial_pink_attributes_site_inner( $attributes ) {
 	$attributes['role']     = 'main';
 	$attributes['itemprop'] = 'mainContentOfPage';
 	return $attributes;
