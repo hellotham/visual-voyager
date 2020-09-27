@@ -1,10 +1,12 @@
-# Visual Voyager Theme
+# Milennial Pink Theme
 
 ![screenshot](https://github.com/hellotham/visual-voyager/raw/develop/screenshot.png)
 
 GitHub project link: https://github.com/hellotham/visual-voyager/.
 
 Live site: https://visualvoyager.net
+
+Modification of Visual Voyager theme but with Milennial Pink colour palette.
 
 ## Installation Instructions
 
