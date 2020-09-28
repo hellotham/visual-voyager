@@ -17,7 +17,7 @@ require_once get_template_directory() . '/lib/init.php';
 require_once get_stylesheet_directory() . '/lib/theme-defaults.php';
 
 define( 'CHILD_THEME_NAME', 'Milennial Pink' );
-define( 'CHILD_THEME_URL', 'https://visualvoyager.net/' );
+define( 'CHILD_THEME_URL', 'https://christham.net/' );
 define( 'CHILD_THEME_VERSION', '1.0.0' );
 
 add_action( 'after_setup_theme', 'milennial_pink_localization_setup' );
@@ -86,7 +86,9 @@ function milennial_pink_enqueue_scripts_styles() {
 	);
 
 	wp_enqueue_style( 'dashicons' );
-	wp_enqueue_style( 'milennial-pink-font-lato', '//fonts.googleapis.com/css?family=Lato:300,400,700', [], genesis_get_theme_version() );
+	wp_enqueue_style( 'milennial-pink-font-lato', '//fonts.googleapis.com/css?family=Lato:300,400,700,900', [], genesis_get_theme_version() );
+	wp_enqueue_style( 'milennial-pink-font-raleway', '//fonts.googleapis.com/css?family=Raleway:400,500,700,900', [], genesis_get_theme_version() );
+	wp_enqueue_style( 'milennial-pink-font-bubblegum-sans', '//fonts.googleapis.com/css?family=Bubblegum+Sans', [], genesis_get_theme_version() );
 	wp_enqueue_style( 'milennial-pink-font-awesome', '//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', [], '4.7.0' );
 	wp_enqueue_style( 'milennial-pink-line-awesome', '//maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css', [], '1.1' );
 	wp_enqueue_script( 'milennial-pink-match-height', get_stylesheet_directory_uri() . '/js/match-height.js', [ 'jquery' ], '0.5.2', true );

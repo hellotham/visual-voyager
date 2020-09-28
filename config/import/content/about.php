@@ -21,7 +21,7 @@ return <<<CONTENT
 <!-- /wp:image -->
 
 <!-- wp:atomic-blocks/ab-spacer {"spacerHeight":29} -->
-<div style="color:#ddd" class="wp-block-atomic-blocks-ab-spacer ab-block-spacer ab-divider-solid ab-divider-size-1"><hr style="height:29px"/></div>
+<div style="color:#f7caca" class="wp-block-atomic-blocks-ab-spacer ab-block-spacer ab-divider-solid ab-divider-size-1"><hr style="height:29px"/></div>
 <!-- /wp:atomic-blocks/ab-spacer -->
 
 <!-- wp:columns -->

@@ -43,7 +43,7 @@
 }
 
 .site-container p.has-background.light-text a {
-	color: #fff;
+	color: #f4dede;
 	text-decoration: underline;
 }
 
@@ -195,13 +195,13 @@
 }
 
 .site-container .wp-block-pullquote.is-style-solid-color p {
-	color: #fff;
+	color: #f4dede;
 	margin-bottom: 42px;
 	text-align: center;
 }
 
 .site-container .wp-block-pullquote.is-style-solid-color {
-	background-color: #333;
+	background-color: #27272a;
 }
 
 .wp-block-pullquote.is-style-solid-color.alignleft blockquote,
@@ -232,7 +232,7 @@
 }
 
 .site-container .wp-block-pullquote.is-style-solid-color cite {
-	color: #fff;
+	color: #f4dede;
 	font-style: italic;
 }
 
@@ -339,7 +339,7 @@ hr.wp-block-separator {
 }
 
 .wp-block-separator.is-style-dots {
-	color: #333;
+	color: #27272a;
 }
 
 .wp-block-audio audio {

@@ -17,7 +17,7 @@ Loaded on the front page */
 
 .front-page .white .site-header,
 .header-image.front-page .site-header {
-	background-color: #fff;
+	background-color: #f4dede;
 	border-bottom: 1px solid #eee;
 }
 
@@ -25,12 +25,12 @@ Loaded on the front page */
 .front-page .site-title a,
 .front-page .site-title a:hover,
 .front-page .site-title a:focus {
-	color: #fff;
+	color: #f4dede;
 }
 
 @media only screen and (min-width:801px) {
 	.front-page .nav-primary .genesis-nav-menu a {
-		color: #fff;
+		color: #f4dede;
 	}
 }
 
@@ -41,7 +41,7 @@ Loaded on the front page */
 
 .front-page .white .offscreen-content button,
 .front-page .white .offscreen-content-icon button {
-	background-color: #fff;
+	background-color: #f4dede;
 }
 
 .front-page .genesis-nav-menu .sub-menu a,
@@ -172,11 +172,11 @@ Loaded on the front page */
 .front-page-1 p,
 .front-page-1 .featured-content .entry-title a,
 .front-page-1 .widget-title {
-	color: #fff;
+	color: #f4dede;
 }
 
 .front-page-1 a {
-	border-bottom: 1px solid #fff;
+	border-bottom: 1px solid #f4dede;
 }
 
 .front-page-1 a:hover,
@@ -228,7 +228,7 @@ Loaded on the front page */
 .front-page-1 input:hover[type="submit"],
 .front-page-1 .textwidget a.button:focus,
 .front-page-1 .textwidget a.button:hover {
-	background-color: #fff;
+	background-color: #f4dede;
 	border: none;
 	color: #000;
 }
@@ -269,7 +269,7 @@ Loaded on the front page */
 .front-page-2 .textwidget a.button:hover {
 	background-color: #000;
 	border: none;
-	color: #fff;
+	color: #f4dede;
 }
 
 
@@ -278,7 +278,7 @@ Loaded on the front page */
 
 .front-page-3 {
 	background-color: #666;
-	color: #fff;
+	color: #f4dede;
 	padding-bottom: 180px;
 	padding-top: 170px;
 	text-align: center;
@@ -293,11 +293,11 @@ Loaded on the front page */
 .front-page-3 p,
 .front-page-3 .featured-content .entry-title a,
 .front-page-3 .widget-title {
-	color: #fff;
+	color: #f4dede;
 }
 
 .front-page-3 a {
-	border-bottom: 1px solid #fff;
+	border-bottom: 1px solid #f4dede;
 }
 
 .front-page-3 a:hover,
@@ -339,7 +339,7 @@ Loaded on the front page */
 .front-page-3 input:hover[type="submit"],
 .front-page-3 .textwidget a.button:focus,
 .front-page-3 .textwidget a.button:hover {
-	background-color: #fff;
+	background-color: #f4dede;
 	border: none;
 	color: #000;
 }
@@ -380,7 +380,7 @@ Loaded on the front page */
 .front-page-4 .textwidget a.button:hover {
 	background-color: #000;
 	border: none;
-	color: #fff;
+	color: #f4dede;
 }
 
 
@@ -389,7 +389,7 @@ Loaded on the front page */
 
 .front-page-5 {
 	background-color: #666;
-	color: #fff;
+	color: #f4dede;
 	padding-bottom: 180px;
 	padding-top: 170px;
 	text-align: center;
@@ -404,11 +404,11 @@ Loaded on the front page */
 .front-page-5 p,
 .front-page-5 .featured-content .entry-title a,
 .front-page-5 .widget-title {
-	color: #fff;
+	color: #f4dede;
 }
 
 .front-page-5 a {
-	border-bottom: 1px solid #fff;
+	border-bottom: 1px solid #f4dede;
 }
 
 .front-page-5 a:hover,
@@ -450,7 +450,7 @@ Loaded on the front page */
 .front-page-5 input:hover[type="submit"],
 .front-page-5 .textwidget a.button:focus,
 .front-page-5 .textwidget a.button:hover {
-	background-color: #fff;
+	background-color: #f4dede;
 	border: none;
 	color: #000;
 }
@@ -491,7 +491,7 @@ Loaded on the front page */
 .front-page-6 .textwidget a.button:hover {
 	background-color: #000;
 	border: none;
-	color: #fff;
+	color: #f4dede;
 }
 
 
@@ -500,7 +500,7 @@ Loaded on the front page */
 
 .front-page-7 {
 	background-color: #666;
-	color: #fff;
+	color: #f4dede;
 	padding-bottom: 180px;
 	padding-top: 170px;
 	text-align: center;
@@ -515,11 +515,11 @@ Loaded on the front page */
 .front-page-7 p,
 .front-page-7 .featured-content .entry-title a,
 .front-page-7 .widget-title {
-	color: #fff;
+	color: #f4dede;
 }
 
 .front-page-7 a {
-	border-bottom: 1px solid #fff;
+	border-bottom: 1px solid #f4dede;
 }
 
 .front-page-7 a:hover,
@@ -561,7 +561,7 @@ Loaded on the front page */
 .front-page-7 input:hover[type="submit"],
 .front-page-7 .textwidget a.button:focus,
 .front-page-7 .textwidget a.button:hover {
-	background-color: #fff;
+	background-color: #f4dede;
 	border: none;
 	color: #000;
 }
@@ -654,7 +654,7 @@ Loaded on the front page */
 }
 
 .featuredpage .team-member.entry {
-	color: #fff;
+	color: #f4dede;
 	padding: 0;
 	position: relative;
 }
@@ -719,7 +719,7 @@ Loaded on the front page */
 .featuredpage .team-member .entry-title a,
 .featuredpage .team-member .more-link:hover,
 .featuredpage .team-member .more-link:focus {
-	color: #fff;
+	color: #f4dede;
 }
 
 .featuredpage .team-member .entry-title {
@@ -733,12 +733,12 @@ Loaded on the front page */
 }
 
 .featuredpage .team-member .entry-title a:focus .team-name {
-	border-bottom: 1px #fff dotted;
+	border-bottom: 1px #f4dede dotted;
 }
 
 .featuredpage .team-member p,
 .featuredpage .team-member .entry-title .team-title {
-	color: #fff;
+	color: #f4dede;
 	font-size: 22px;
 	font-size: 2.2rem;
 	font-weight: 400;

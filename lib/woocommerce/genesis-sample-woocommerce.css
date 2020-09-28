@@ -155,7 +155,7 @@ ul.wc-block-grid__products > li {
 .woocommerce nav.woocommerce-pagination ul li a,
 .woocommerce nav.woocommerce-pagination ul li span {
 	background-color: #f5f5f5;
-	color: #333;
+	color: #27272a;
 	cursor: pointer;
 	display: inline-block;
 	font-size: 16px;
@@ -168,8 +168,8 @@ ul.wc-block-grid__products > li {
 .woocommerce nav.woocommerce-pagination ul li a:focus,
 .woocommerce nav.woocommerce-pagination ul li a:hover,
 .woocommerce nav.woocommerce-pagination ul li span.current {
-	background-color: #333;
-	color: #fff;
+	background-color: #27272a;
+	color: #f4dede;
 }
 
 
@@ -220,7 +220,7 @@ ul.wc-block-grid__products > li {
 	padding: 0;
 	border-radius: 0;
 	border: 1px solid #eee;
-	background-color: #fff;
+	background-color: #f4dede;
 	border-bottom: 0;
 }
 
@@ -382,10 +382,10 @@ ul.wc-block-grid__products > li {
 .woocommerce input.button[type="submit"],
 .woocommerce #respond input#submit,
 .woocommerce #respond input#submit.alt {
-	background-color: #333;
+	background-color: #27272a;
 	border: 0;
 	border-radius: 0;
-	color: #fff;
+	color: #f4dede;
 	cursor: pointer;
 	font-size: 16px;
 	font-weight: 600;
@@ -415,7 +415,7 @@ ul.wc-block-grid__products > li {
 .woocommerce #respond input#submit.alt:focus,
 .woocommerce #respond input#submit.alt:hover {
 	background-color: #0073e5;
-	color: #fff;
+	color: #f4dede;
 }
 
 .woocommerce #reviews #comment {
@@ -501,7 +501,7 @@ ul.wc-block-grid__products > li {
 .woocommerce #respond input#submit:disabled,
 .woocommerce #respond input#submit:disabled[disabled] {
 	background-color: #000;
-	color: #fff;
+	color: #f4dede;
 	padding: 16px 24px;
 }
 
@@ -571,7 +571,7 @@ ul.wc-block-grid__products > li {
 }
 
 .woocommerce-MyAccount-navigation ul li.is-active > a {
-	color: #333;
+	color: #27272a;
 	font-weight: 700;
 }
 
@@ -860,8 +860,8 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 	}
 
 	.full-width-content.woocommerce div.product .woocommerce-tabs ul.tabs li.active {
-		background-color: #fff;
-		border-bottom: 1px solid #fff;
+		background-color: #f4dede;
+		border-bottom: 1px solid #f4dede;
 	}
 
 	.full-width-content.woocommerce div.product .woocommerce-tabs ul.tabs li.active a::after {
@@ -883,8 +883,8 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 	}
 
 	.woocommerce div.product .woocommerce-tabs ul.tabs li.active {
-		background-color: #fff;
-		border-bottom: 1px solid #fff;
+		background-color: #f4dede;
+		border-bottom: 1px solid #f4dede;
 	}
 
 	.woocommerce div.product .woocommerce-tabs ul.tabs li.active a::after {

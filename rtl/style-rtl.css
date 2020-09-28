@@ -735,7 +735,7 @@ img.alignright {
 
 	.menu-toggle:focus,
 	.sub-menu-toggle:focus {
-		border-color: #fff;
+		border-color: #f4dede;
 	}
 
 	.menu-toggle::before {

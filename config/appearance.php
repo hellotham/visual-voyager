@@ -9,8 +9,8 @@
  */
 
 $milennial_pink_default_colors = [
-	'link'   => '#660099',
-	'accent' => '#cc3366',
+	'link'   => '#d2386c',
+	'accent' => '#ec809e',
 ];
 
 $milennial_pink_link_color = get_theme_mod(

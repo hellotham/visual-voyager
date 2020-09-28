@@ -167,8 +167,8 @@ body > div {
 }
 
 body {
-	background-color: #fff;
-	color: #333;
+	background-color: #f4dede;
+	color: #27272a;
 	font-family: sans-serif;
 	font-size: 16px;
 	font-size: 1.6rem;
@@ -190,14 +190,14 @@ textarea:focus,
 }
 
 a {
-	color: #660099;
+	color: #d2386c;
 	text-decoration: underline;
 	transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 a:focus,
 a:hover {
-	color: #cc3366;
+	color: #ec809e;
 	text-decoration: none;
 }
 
@@ -238,8 +238,8 @@ i {
 }
 
 mark {
-	background: #ddd;
-	color: #333;
+	background: #f7caca;
+	color: #27272a;
 }
 
 blockquote {
@@ -393,9 +393,9 @@ figure {
 input,
 select,
 textarea {
-	background-color: #fff;
-	border: 1px solid #ddd;
-	color: #333;
+	background-color: #f4dede;
+	border: 1px solid #f7caca;
+	color: #27272a;
 	font-size: 16px;
 	font-weight: 400;
 	padding: 15px;
@@ -415,17 +415,17 @@ input[type="radio"] {
 }
 
 ::-ms-input-placeholder {
-	color: #333;
+	color: #27272a;
 	opacity: 1;
 }
 
 :-ms-input-placeholder {
-	color: #333;
+	color: #27272a;
 	opacity: 1;
 }
 
 ::placeholder {
-	color: #333;
+	color: #27272a;
 	opacity: 1;
 }
 
@@ -436,10 +436,10 @@ input[type="submit"],
 .site-container div.wpforms-container-full .wpforms-form input[type="submit"],
 .site-container div.wpforms-container-full .wpforms-form button[type="submit"],
 .button {
-	background-color: #660099;
+	background-color: #d2386c;
 	border: 0;
 	border-radius: 5px;
-	color: #fff;
+	color: #f4dede;
 	cursor: pointer;
 	font-size: 16px;
 	font-weight: 600;
@@ -464,14 +464,14 @@ input[type="submit"]:hover,
 .site-container div.wpforms-container-full .wpforms-form button[type="submit"]:hover,
 .button:focus,
 .button:hover {
-	background-color: #cc3366;
+	background-color: #ec809e;
 	border-width: 0;
-	color: #fff;
+	color: #f4dede;
 }
 
 .entry-content .button:focus,
 .entry-content .button:hover {
-	color: #fff;
+	color: #f4dede;
 }
 
 .button {
@@ -490,7 +490,7 @@ input[type="submit"]:hover,
 .site-container input[type="submit"]:disabled:hover {
 	background-color: #eee;
 	border-width: 0;
-	color: #777;
+	color: #615f5f;
 	cursor: not-allowed;
 }
 
@@ -552,10 +552,10 @@ th {
 .screen-reader-text:focus,
 .screen-reader-shortcut:focus,
 .widget_search input[type="submit"]:focus {
-	background: #fff;
+	background: #f4dede;
 	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 	clip: auto !important;
-	color: #333;
+	color: #27272a;
 	display: block;
 	font-size: 1em;
 	font-weight: 700;
@@ -708,7 +708,7 @@ th {
 
 .entry-title a,
 .sidebar .widget-title a {
-	color: #333;
+	color: #27272a;
 	text-decoration: none;
 }
 
@@ -903,7 +903,7 @@ figcaption,
 .gs-faq__question {
 	background: transparent;
 	border-bottom: 1px solid #eee;
-	color: #333;
+	color: #27272a;
 	padding-left: 0;
 	padding-right: 0;
 }
@@ -995,7 +995,7 @@ figcaption,
 
 /* Display outline on focus */
 :focus {
-	color: #333;
+	color: #27272a;
 	outline: #ccc solid 1px;
 }
 
@@ -1004,7 +1004,7 @@ figcaption,
 ---------------------------------------------------------------------------------------------------- */
 
 .site-header {
-	background-color: #fff;
+	background-color: #f4dede;
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -1062,12 +1062,12 @@ figcaption,
 }
 
 .site-title as {
-	color: #660099;
+	color: #d2386c;
 }
 
 .site-title a:hover,
 .site-title a:focus {
-	color: #cc3366;
+	color: #ec809e;
 }
 
 .site-description {
@@ -1139,7 +1139,7 @@ figcaption,
 
 .genesis-nav-menu {
 	clear: both;
-	color: #660099;
+	color: #d2386c;
 	font-size: 16px;
 	font-size: 1.6rem;
 	line-height: inherit;
@@ -1160,17 +1160,17 @@ figcaption,
 	display: block;
 	padding: 15px;
 	margin: 0;
-	color: #660099;
+	color: #d2386c;
 }
 
 .genesis-nav-menu a:hover {
-	color: #cc3366;
+	color: #ec809e;
 }
 
 .genesis-nav-menu .current-menu-item > a,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover,
 .genesis-nav-menu .sub-menu .current-menu-item > a:focus  {
-	color: #cc3366;
+	color: #ec809e;
 }
 
 .genesis-nav-menu .sub-menu {
@@ -1184,7 +1184,7 @@ figcaption,
 }
 
 .genesis-nav-menu .sub-menu a {
-	background-color: #fff;
+	background-color: #f4dede;
 	border: 1px solid #eee;
 	border-top: 0;
 	padding: 12px 18px;
@@ -1240,14 +1240,14 @@ figcaption,
 
 	.genesis-nav-menu > .menu-item.highlight a,
 	.site-header.sticky .genesis-nav-menu > .menu-item.highlight a {
-		border: 1px solid #ddd;
+		border: 1px solid #f7caca;
 		border-radius: 2px;
 		padding: 3px 15px;
 		margin-left: 10px;
 	}
 
 	.genesis-nav-menu > .menu-item-has-children > a:after {
-		color: #ddd;
+		color: #f7caca;
 		content: "\f107";
 		font-family: fontawesome;
 		padding: 0 0 0 8px;
@@ -1255,7 +1255,7 @@ figcaption,
 	}
 
 	.genesis-nav-menu .sub-menu > .menu-item-has-children > a:after {
-		color: #ddd;
+		color: #f7caca;
 		content: "\f105";
 		float: right;
 		font-family: fontawesome;
@@ -1309,9 +1309,9 @@ figcaption,
 
 	.menu-toggle,
 	.sub-menu-toggle {
-		background-color: #fff;
+		background-color: #f4dede;
 		border: 0;
-		color: #333;
+		color: #27272a;
 		position: relative;
 		padding: 3px 15px;
 		display: block;
@@ -1336,12 +1336,12 @@ figcaption,
 	.menu-toggle:hover,
 	.sub-menu-toggle:focus,
 	.sub-menu-toggle:hover {
-		color: #333;
+		color: #27272a;
 	}
 
 	.menu-toggle:focus,
 	.sub-menu-toggle:focus {
-		border-color: #fff;
+		border-color: #f4dede;
 		outline: 1px solid #ccc;
 	}
 
@@ -1350,14 +1350,14 @@ figcaption,
 	}
 
 	.menu-toggle {
-		border: 1px solid #ddd;
+		border: 1px solid #f7caca;
 		position: relative;
 		z-index: 1000;
 		width: 100%;
 	}
 
 	.menu-toggle::before {
-		color: #777;
+		color: #615f5f;
 		content: "\f0c9";
 		font-family: 'FontAwesome';
 		font-size: 15px;
@@ -1380,7 +1380,7 @@ figcaption,
 	}
 
 	.sub-menu-toggle::before {
-		color: #333;
+		color: #27272a;
 		content: "\f107";
 		font-family: 'FontAwesome';
 		display: inline-block;
@@ -1502,7 +1502,7 @@ figcaption,
 /*! ## Primary Navigation
 --------------------------------------------- */
 .nav-primary {
-	background: #fff;
+	background: #f4dede;
 }
 
 .nav-primary .wrap {
@@ -1513,7 +1513,7 @@ figcaption,
 --------------------------------------------- */
 
 .nav-secondary {
-	background: #fff;
+	background: #f4dede;
 	border-bottom: 1px solid #e6e9ed;
 }
 
@@ -1699,8 +1699,8 @@ p.entry-meta {
 	margin-bottom: 4px;
 	line-height: 100%;
 	display: inline-block;
-	background-color: #660099;
-	color: #fff;
+	background-color: #d2386c;
+	color: #f4dede;
 	border-radius: 3px;
 	-webkit-border-radius: 3px;
 	text-decoration: none;
@@ -1712,23 +1712,23 @@ p.entry-meta {
 	margin-bottom: 4px;
 	line-height: 100%;
 	display: inline-block;
-	border: 1px solid #660099;
-	color: #660099;
+	border: 1px solid #d2386c;
+	color: #d2386c;
 	border-radius: 3px;
 	-webkit-border-radius: 3px;
 	text-decoration: none;
 }
 
 .entry-categories a:hover {
-	background-color: #cc3366;
-	border-color: #660099;
-	color: #ffffff;
+	background-color: #ec809e;
+	border-color: #d2386c;
+	color: #f4dedefff;
 	text-decoration: none;
 }
 
 .entry-tags a:hover {
-	border-color: #cc3366;
-	border: 1px solid #cc3366;
+	border-color: #ec809e;
+	border: 1px solid #ec809e;
 	text-decoration: none;
 }
 
@@ -1755,7 +1755,7 @@ p.entry-meta {
 
 .archive-pagination li a {
 	background-color: #f5f5f5;
-	color: #333;
+	color: #27272a;
 	cursor: pointer;
 	display: inline-block;
 	font-size: 16px;
@@ -1768,8 +1768,8 @@ p.entry-meta {
 .archive-pagination li a:focus,
 .archive-pagination li a:hover,
 .archive-pagination li.active a {
-	background-color: #333;
-	color: #fff;
+	background-color: #27272a;
+	color: #f4dede;
 }
 
 /* Entry Comments
@@ -1930,9 +1930,9 @@ p.entry-meta {
 	}
 
 	.genesis-nav-menu > .menu-highlight > a {
-		background-color: #333;
+		background-color: #27272a;
 		border-radius: 3px;
-		color: #fff;
+		color: #f4dede;
 		font-weight: 600;
 		margin-left: 15px;
 		padding-left: 20px;
@@ -1941,7 +1941,7 @@ p.entry-meta {
 
 	.genesis-nav-menu > .menu-highlight > a:focus,
 	.genesis-nav-menu > .menu-highlight > a:hover {
-		background-color: #660099;
+		background-color: #d2386c;
 	}
 
 	.genesis-nav-menu .sub-menu,
@@ -2161,7 +2161,7 @@ p.entry-meta {
 	*::after {
 		background: transparent !important;
 		box-shadow: none !important;
-		color: #333 !important;
+		color: #27272a !important;
 		text-shadow: none !important;
 	}
 
@@ -2298,11 +2298,11 @@ p.entry-meta {
 --------------------------------------------- */
 
 .site-topbar {
-	background: #fff;
+	background: #f4dede;
 	border-bottom: 1px solid #e6e9ed;
 	font-size: 14px;
 	font-size: 1.4rem;
-	color: #777;
+	color: #615f5f;
 	line-height: normal;
 	height: auto;
 	text-align: center;
@@ -2346,7 +2346,7 @@ p.entry-meta {
 }
 
 .site-topbar a {
-	color: #777;
+	color: #615f5f;
 }
 
 .site-topbar a:hover {

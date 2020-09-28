@@ -27,7 +27,7 @@ function milennial_pink_color_contrast( $color ) {
 
 	$luminosity = ( ( $red * 0.2126 ) + ( $green * 0.7152 ) + ( $blue * 0.0722 ) );
 
-	return ( $luminosity > 128 ) ? '#333333' : '#ffffff';
+	return ( $luminosity > 128 ) ? '#27272a333' : '#f4dedefff';
 
 }
 

@@ -33,14 +33,14 @@ return <<<CONTENT
 <!-- /wp:buttons --></div></div>
 <!-- /wp:media-text -->
 
-<!-- wp:atomic-blocks/ab-container {"containerPaddingTop":4.5,"containerPaddingRight":0,"containerPaddingBottom":0,"containerPaddingLeft":0,"containerMarginTop":0,"containerMarginBottom":0,"containerWidth":"full","containerBackgroundColor":"#333"} -->
-<div style="background-color:#333;padding-top:4.5%" class="wp-block-atomic-blocks-ab-container ab-block-container alignfull"><div class="ab-container-inside"><div class="ab-container-content" style="max-width:1600px"><!-- wp:atomic-blocks/ab-cta {"buttonText":"Get Started Today","buttonBackgroundColor":"#0072e5","ctaBackgroundColor":"#333333","ctaTextColor":"#f5f5f5"} -->
-<div style="background-color:#333333;text-align:center" class="wp-block-atomic-blocks-ab-cta ab-block-cta"><div class="ab-cta-content"><h2 class="ab-cta-title ab-font-size-32" style="color:#f5f5f5">Ready to take your next step?</h2><div class="ab-cta-text ab-font-size-32" style="color:#f5f5f5"><p>Grow your audience and build a profitable online business.</p></div></div><div class="ab-cta-button"><a href="#" target="_self" rel="noopener noreferrer" class="ab-button ab-button-shape-rounded ab-button-size-medium" style="color:#ffffff;background-color:#0072e5">Get Started Today</a></div></div>
+<!-- wp:atomic-blocks/ab-container {"containerPaddingTop":4.5,"containerPaddingRight":0,"containerPaddingBottom":0,"containerPaddingLeft":0,"containerMarginTop":0,"containerMarginBottom":0,"containerWidth":"full","containerBackgroundColor":"#27272a"} -->
+<div style="background-color:#27272a;padding-top:4.5%" class="wp-block-atomic-blocks-ab-container ab-block-container alignfull"><div class="ab-container-inside"><div class="ab-container-content" style="max-width:1600px"><!-- wp:atomic-blocks/ab-cta {"buttonText":"Get Started Today","buttonBackgroundColor":"#0072e5","ctaBackgroundColor":"#27272a333","ctaTextColor":"#f5f5f5"} -->
+<div style="background-color:#27272a333;text-align:center" class="wp-block-atomic-blocks-ab-cta ab-block-cta"><div class="ab-cta-content"><h2 class="ab-cta-title ab-font-size-32" style="color:#f5f5f5">Ready to take your next step?</h2><div class="ab-cta-text ab-font-size-32" style="color:#f5f5f5"><p>Grow your audience and build a profitable online business.</p></div></div><div class="ab-cta-button"><a href="#" target="_self" rel="noopener noreferrer" class="ab-button ab-button-shape-rounded ab-button-size-medium" style="color:#f4dedefff;background-color:#0072e5">Get Started Today</a></div></div>
 <!-- /wp:atomic-blocks/ab-cta --></div></div></div>
 <!-- /wp:atomic-blocks/ab-container -->
 
 <!-- wp:atomic-blocks/ab-spacer {"spacerHeight":60} -->
-<div style="color:#ddd" class="wp-block-atomic-blocks-ab-spacer ab-block-spacer ab-divider-solid ab-divider-size-1"><hr style="height:60px"/></div>
+<div style="color:#f7caca" class="wp-block-atomic-blocks-ab-spacer ab-block-spacer ab-divider-solid ab-divider-size-1"><hr style="height:60px"/></div>
 <!-- /wp:atomic-blocks/ab-spacer -->
 
 <!-- wp:heading {"align":"center"} -->
@@ -48,7 +48,7 @@ return <<<CONTENT
 <!-- /wp:heading -->
 
 <!-- wp:atomic-blocks/ab-spacer {"spacerHeight":25} -->
-<div style="color:#ddd" class="wp-block-atomic-blocks-ab-spacer ab-block-spacer ab-divider-solid ab-divider-size-1"><hr style="height:25px"/></div>
+<div style="color:#f7caca" class="wp-block-atomic-blocks-ab-spacer ab-block-spacer ab-divider-solid ab-divider-size-1"><hr style="height:25px"/></div>
 <!-- /wp:atomic-blocks/ab-spacer -->
 
 <!-- wp:atomic-blocks/ab-columns {"columns":3,"layout":"ab-3-col-equal","align":"wide"} -->
@@ -72,27 +72,27 @@ return <<<CONTENT
 <!-- /wp:atomic-blocks/ab-columns -->
 
 <!-- wp:atomic-blocks/ab-spacer -->
-<div style="color:#ddd" class="wp-block-atomic-blocks-ab-spacer ab-block-spacer ab-divider-solid ab-divider-size-1"><hr style="height:30px"/></div>
+<div style="color:#f7caca" class="wp-block-atomic-blocks-ab-spacer ab-block-spacer ab-divider-solid ab-divider-size-1"><hr style="height:30px"/></div>
 <!-- /wp:atomic-blocks/ab-spacer -->
 
-<!-- wp:atomic-blocks/ab-columns {"columns":2,"layout":"ab-2-col-equal","align":"full","paddingTop":14,"paddingRight":5,"paddingBottom":8,"paddingLeft":5,"paddingUnit":"%","customTextColor":"#ffffff","customBackgroundColor":"#333333","columnMaxWidth":1062} -->
-<div class="wp-block-atomic-blocks-ab-columns ab-layout-columns-2 ab-2-col-equal ab-has-custom-background-color ab-has-custom-text-color ab-columns-center alignfull" style="padding-top:14%;padding-right:5%;padding-bottom:8%;padding-left:5%;background-color:#333333;color:#ffffff"><div class="ab-layout-column-wrap ab-block-layout-column-gap-2 ab-is-responsive-column" style="max-width:1062px"><!-- wp:atomic-blocks/ab-column -->
-<div class="wp-block-atomic-blocks-ab-column ab-block-layout-column"><div class="ab-block-layout-column-inner"><!-- wp:paragraph {"align":"left","customTextColor":"#ffffff","customFontSize":40} -->
-<p style="color:#ffffff;font-size:40px" class="has-text-color has-text-align-left">Contact us today</p>
+<!-- wp:atomic-blocks/ab-columns {"columns":2,"layout":"ab-2-col-equal","align":"full","paddingTop":14,"paddingRight":5,"paddingBottom":8,"paddingLeft":5,"paddingUnit":"%","customTextColor":"#f4dedefff","customBackgroundColor":"#27272a333","columnMaxWidth":1062} -->
+<div class="wp-block-atomic-blocks-ab-columns ab-layout-columns-2 ab-2-col-equal ab-has-custom-background-color ab-has-custom-text-color ab-columns-center alignfull" style="padding-top:14%;padding-right:5%;padding-bottom:8%;padding-left:5%;background-color:#27272a333;color:#f4dedefff"><div class="ab-layout-column-wrap ab-block-layout-column-gap-2 ab-is-responsive-column" style="max-width:1062px"><!-- wp:atomic-blocks/ab-column -->
+<div class="wp-block-atomic-blocks-ab-column ab-block-layout-column"><div class="ab-block-layout-column-inner"><!-- wp:paragraph {"align":"left","customTextColor":"#f4dedefff","customFontSize":40} -->
+<p style="color:#f4dedefff;font-size:40px" class="has-text-color has-text-align-left">Contact us today</p>
 <!-- /wp:paragraph --></div></div>
 <!-- /wp:atomic-blocks/ab-column -->
 
 <!-- wp:atomic-blocks/ab-column -->
 <div class="wp-block-atomic-blocks-ab-column ab-block-layout-column"><div class="ab-block-layout-column-inner"><!-- wp:buttons {"align":"right","className":"home-contact"} -->
-<div class="wp-block-buttons alignright home-contact"><!-- wp:button {"customTextColor":"#ffffff","borderRadius":0,"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-text-color no-border-radius" href="#" style="color:#ffffff">Get in touch</a></div>
+<div class="wp-block-buttons alignright home-contact"><!-- wp:button {"customTextColor":"#f4dedefff","borderRadius":0,"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-text-color no-border-radius" href="#" style="color:#f4dedefff">Get in touch</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div></div>
 <!-- /wp:atomic-blocks/ab-column --></div></div>
 <!-- /wp:atomic-blocks/ab-columns -->
 
 <!-- wp:atomic-blocks/ab-spacer {"spacerHeight":60} -->
-<div style="color:#ddd" class="wp-block-atomic-blocks-ab-spacer ab-block-spacer ab-divider-solid ab-divider-size-1"><hr style="height:60px"/></div>
+<div style="color:#f7caca" class="wp-block-atomic-blocks-ab-spacer ab-block-spacer ab-divider-solid ab-divider-size-1"><hr style="height:60px"/></div>
 <!-- /wp:atomic-blocks/ab-spacer -->
 
 <!-- wp:atomic-blocks/ab-columns {"columns":2,"layout":"ab-2-col-equal","align":"wide"} -->
