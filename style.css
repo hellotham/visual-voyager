@@ -2473,6 +2473,7 @@ p.entry-meta {
 	font-size: 1.4rem;
 	font-weight: normal;
 	text-transform: none;
+	color: #d2386c
 }
 
 @media only screen and (min-width: 1023px) {
