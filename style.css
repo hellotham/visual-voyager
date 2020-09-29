@@ -2323,11 +2323,16 @@ p.entry-meta {
 }
 
 .footer-widgets input {
-	background: #f4dede;
+	background: #f0eee9;
 	border: none;
 	font-size: 13px;
 	font-size: 1.3rem;
 	margin-bottom: 10px;
+}
+
+.footer-widgets input[type="submit"] {
+	background-color: #d2386c;
+	color: #f0eee9;
 }
 
 .footer-widgets a.button {
@@ -2789,10 +2794,10 @@ p.entry-meta {
 }
 
 .genesis-pro-portfolio .entry .portfolio-featured-image:after {
-	background: #d2386c none repeat scroll 0 0;
+	background: #f7caca none repeat scroll 0 0;
 	content: "\f105";
 	border-radius: 50%;
-	color: #f4dede;
+	color: #615f5f;
 	font-family: fontawesome;
 	font-size: 24px;
 	font-size: 2.4rem;
